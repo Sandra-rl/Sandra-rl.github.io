@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Consultoría, formación corporativa, selección de talento, igualdad y gestión de personas. Personas. Organizaciones. Transformación.">
+
+  <meta name="theme-color" content="#355746">
+
+  <title>Cuidar es transformar | Consultoría y formación</title>
+
+  <style>
+    :root {
+      --verde: #355746;
+      --verde-oscuro: #263D31;
+      --salvia: #A8BDA9;
+      --marfil: #F2F0E8;
+      --terracota: #C28D70;
+      --blanco: #FFFFFF;
+      --texto: #354139;
+      --gris: #6E786F;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background: var(--blanco);
+      line-height: 1.75;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: normal;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.7rem, 6vw, 5rem);
+    }
+
+    h2 {
+      font-size: clamp(2.1rem, 4vw, 3.2rem);
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .contenedor {
+      width: min(1120px, 88%);
+      margin: auto;
+    }
+
+    .etiqueta {
+      color: var(--verde);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: .76rem;
+      font-weight: bold;
+    }
+
+    /* NAVEGACIÓN */
+
+    header {
+      background: var(--blanco);
+      border-bottom: 1px solid #e8e8e2;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .marca {
+      color: var(--verde);
+      font-family: Georgia, serif;
+      font-size: 1.35rem;
+      font-weight: bold;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+      flex-wrap: wrap;
+    }
+
+    .menu a {
+      text-decoration: none;
+      font-size: .88rem;
+      transition: color .2s;
+    }
+
+    .menu a:hover {
+      color: var(--terracota);
+    }
+
+    /* BOTONES */
+
+    .boton {
+      display: inline-block;
+      padding: 13px 24px;
+      background: var(--verde);
+      color: var(--blanco);
+      text-decoration: none;
+      border: 1px solid var(--verde);
+      transition: .2s;
+      margin: 12px 10px 0 0;
+      font-size: .9rem;
+    }
+
+    .boton:hover {
+      background: transparent;
+      color: var(--verde);
+    }
+
+    .boton-secundario {
+      background: transparent;
+      color: var(--verde);
+    }
+
+    /* PORTADA */
+
+    .hero {
+      background: var(--marfil);
+      padding: 105px 0;
+    }
+
+    .hero-contenido {
+      display: grid;
+      grid-template-columns: 1.35fr .85fr;
+      align-items: center;
+      gap: 65px;
+    }
+
+    .hero h1 {
+      color: var(--verde);
+      margin: 22px 0;
+    }
+
+    .hero p {
+      font-size: 1.15rem;
+      max-width: 650px;
+      margin-bottom: 12px;
+    }
+
+    .foto {
+      min-height: 440px;
+      background: var(--salvia);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      text-align: center;
+      color: var(--verde);
+    }
+
+    .foto span {
+      font-family: Georgia, serif;
+      font-size: 1.4rem;
+      max-width: 230px;
+    }
+
+    /* SOBRE MÍ */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .sobre {
+      display: grid;
+      grid-template-columns: .8fr 1.2fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .sobre h2 {
+      color: var(--verde);
+      margin-top: 18px;
+    }
+
+    .sobre-destacado {
+      font-family: Georgia, serif;
+      font-size: 1.55rem;
+      line-height: 1.5;
+      color: var(--verde);
+      margin-bottom: 22px;
+    }
+
+    .sobre p {
+      margin-bottom: 17px;
+    }
+
+    /* SERVICIOS */
+
+    .servicios {
+      background: var(--marfil);
+    }
+
+    .titulo-seccion {
+      color: var(--verde);
+      max-width: 750px;
+      margin: 15px 0;
+    }
+
+    .introduccion {
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .rejilla {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
+    .tarjeta {
+      background: var(--blanco);
+      padding: 34px;
+      border-top: 3px solid var(--salvia);
+      transition: transform .2s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+    }
+
+    .tarjeta h3 {
+      color: var(--verde);
+      margin-bottom: 15px;
+    }
+
+    .tarjeta p {
+      font-size: .96rem;
+    }
+
+    /* METODOLOGÍA */
+
+    .metodologia {
+      background: var(--verde);
+      color: var(--blanco);
+    }
+
+    .metodologia .etiqueta {
+      color: var(--salvia);
+    }
+
+    .metodologia h2 {
+      margin: 18px 0;
+      max-width: 750px;
+    }
+
+    .metodologia-intro {
+      max-width: 720px;
+    }
+
+    .pasos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 25px;
+      margin-top: 50px;
+    }
+
+    .paso {
+      border-top: 1px solid var(--salvia);
+      padding-top: 18px;
+    }
+
+    .numero {
+      color: var(--salvia);
+      font-family: Georgia, serif;
+      font-size: 2rem;
+    }
+
+    .paso h3 {
+      margin: 12px 0;
+    }
+
+    .paso p {
+      font-size: .9rem;
+      color: #e0e9e1;
+    }
+
+    /* COLABORACIONES */
+
+    .colaboracion {
+      background: var(--marfil);
+    }
+
+    .colaboracion-contenido {
+      max-width: 800px;
+    }
+
+    .colaboracion h2 {
+      color: var(--verde);
+      margin: 18px 0;
+    }
+
+    .colaboracion p {
+      margin-bottom: 18px;
+    }
+
+    .modalidades {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .modalidad {
+      padding: 10px 17px;
+      background: var(--blanco);
+      border-left: 3px solid var(--terracota);
+      font-size: .9rem;
+    }
+
+    /* CONTACTO */
+
+    .contacto {
+      text-align: center;
+    }
+
+    .contacto h2 {
+      color: var(--verde);
+      margin: 18px 0;
+    }
+
+    .contacto p {
+      max-width: 680px;
+      margin: 12px auto;
+    }
+
+    .contacto .boton {
+      margin-top: 25px;
+    }
+
+    .linkedin {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--verde);
+      font-weight: bold;
+    }
+
+    /* PIE */
+
+    footer {
+      background: var(--verde-oscuro);
+      color: var(--blanco);
+      padding: 32px 0;
+      font-size: .85rem;
+    }
+
+    footer .contenedor {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    footer a {
+      color: var(--blanco);
+      text-decoration: none;
+    }
+
+    /* MÓVILES */
+
+    @media (max-width: 800px) {
+      nav {
+        padding: 17px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .menu {
+        gap: 14px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .hero-contenido,
+      .sobre {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .foto {
+        min-height: 300px;
+      }
+
+      .rejilla {
+        grid-template-columns: 1fr;
+      }
+
+      .pasos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor">
+      <nav>
+        <a class="marca" href="#">Cuidar es transformar.</a>
+
+        <div class="menu">
+          <a href="#sobre-mi">Sobre mí</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#metodologia">Metodología</a>
+          <a href="#colaboraciones">Colaboraciones</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PORTADA -->
+
+    <section class="hero">
+      <div class="contenedor hero-contenido">
+
+        <div>
+          <span class="etiqueta">
+            Personas. Organizaciones. Transformación.
+          </span>
+
+          <h1>
+            Las organizaciones se transforman cuando ponen a las personas en el centro.
+          </h1>
+
+          <p>
+            Consultoría, formación y gestión de personas desde una perspectiva
+            social, educativa y organizacional.
+          </p>
+
+          <a class="boton" href="#servicios">
+            Conoce mis servicios
+          </a>
+
+          <a class="boton boton-secundario" href="#contacto">
+            Hablemos de una colaboración
+          </a>
+        </div>
+
+        <div class="foto">
+          <span>
+            Aquí incorporaremos tu fotografía profesional.
+          </span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+
+    <section id="sobre-mi">
+      <div class="contenedor sobre">
+
+        <div>
+          <span class="etiqueta">Quién está detrás</span>
+
+          <h2>
+            Una mirada humana y estratégica de las organizaciones.
+          </h2>
+        </div>
+
+        <div>
+          <p class="sobre-destacado">
+            Creo en organizaciones que entienden que cuidar a las personas
+            también es una forma de transformar la manera de trabajar.
+          </p>
+
+          <p>
+            Mi trayectoria conecta los ámbitos social, educativo y
+            organizacional. Esta mirada transversal me permite comprender
+            las necesidades de las personas y los retos de las organizaciones.
+          </p>
+
+          <p>
+            Trabajo en el ámbito de los Recursos Humanos, la formación,
+            la igualdad y la gestión de personas, combinando conocimiento
+            técnico, capacidad pedagógica y sensibilidad social.
+          </p>
+
+          <p>
+            Mi objetivo es contribuir a entornos profesionales más justos,
+            inclusivos y saludables, donde las personas puedan desarrollarse
+            y las organizaciones avanzar.
+          </p>
+
+          <p>
+            <strong>[NOMBRE PROFESIONAL]</strong>
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+
+    <section id="servicios" class="servicios">
+      <div class="contenedor">
+
+        <span class="etiqueta">Qué puedo aportar</span>
+
+        <h2 class="titulo-seccion">
+          Servicios para organizaciones que quieren avanzar.
+        </h2>
+
+        <p class="introduccion">
+          Colaboraciones profesionales adaptadas a las necesidades
+          de empresas, consultoras de Recursos Humanos y entidades.
+        </p>
+
+        <div class="rejilla">
+
+          <article class="tarjeta">
+            <h3>01. Selección y gestión del talento</h3>
+            <p>
+              Apoyo en procesos de selección, análisis de perfiles,
+              cribado curricular, entrevistas por competencias,
+              preselección y elaboración de informes.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>02. Formación corporativa</h3>
+            <p>
+              Diseño e impartición de acciones formativas, elaboración
+              de materiales didácticos, formación presencial y online,
+              desarrollo de competencias y evaluación del aprendizaje.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>03. Igualdad, diversidad y prevención del acoso</h3>
+            <p>
+              Sensibilización, formación y apoyo técnico y documental
+              en igualdad, diversidad, inclusión y prevención del acoso
+              laboral y sexual.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <h3>04. Personas y organizaciones</h3>
+            <p>
+              Análisis de necesidades, acompañamiento a equipos,
+              proyectos de mejora organizativa y propuestas para
+              fortalecer la gestión de personas.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGÍA -->
+
+    <section id="metodologia" class="metodologia">
+      <div class="contenedor">
+
+        <span class="etiqueta">Cómo trabajo</span>
+
+        <h2>
+          Rigor técnico. Escucha. Soluciones aplicables.
+        </h2>
+
+        <p class="metodologia-intro">
+          Cada colaboración parte de una necesidad concreta y se desarrolla
+          con objetivos claros, comunicación y evaluación.
+        </p>
+
+        <div class="pasos">
+
+          <div class="paso">
+            <span class="numero">01</span>
+            <h3>Escuchar</h3>
+            <p>Comprender la realidad y las necesidades.</p>
+          </div>
+
+          <div class="paso">
+            <span class="numero">02</span>
+            <h3>Analizar</h3>
+            <p>Identificar prioridades y oportunidades de mejora.</p>
+          </div>
+
+          <div class="paso">
+            <span class="numero">03</span>
+            <h3>Diseñar</h3>
+            <p>Proponer una respuesta adaptada al contexto.</p>
+          </div>
+
+          <div class="paso">
+            <span class="numero">04</span>
+            <h3>Desarrollar</h3>
+            <p>Ejecutar el proyecto y entregar resultados.</p>
+          </div>
+
+          <div class="paso">
+            <span class="numero">05</span>
+            <h3>Evaluar</h3>
+            <p>Revisar resultados y detectar mejoras.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- COLABORACIONES -->
+
+    <section id="colaboraciones" class="colaboracion">
+      <div class="contenedor colaboracion-contenido">
+
+        <span class="etiqueta">Modalidades de colaboración</span>
+
+        <h2>
+          Una colaboración flexible, profesional y orientada a resultados.
+        </h2>
+
+        <p>
+          Trabajo con empresas, consultoras de Recursos Humanos,
+          asesorías y entidades que necesitan apoyo profesional
+          en proyectos concretos.
+        </p>
+
+        <p>
+          Podemos colaborar en proyectos puntuales, servicios por
+          entregables o apoyo profesional recurrente. La modalidad
+          remota permite trabajar con organizaciones de distintos lugares.
+        </p>
+
+        <div class="modalidades">
+          <span class="modalidad">Proyectos puntuales</span>
+          <span class="modalidad">Colaboraciones recurrentes</span>
+          <span class="modalidad">Servicios por entregables</span>
+          <span class="modalidad">Modalidad remota</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+
+    <section id="contacto" class="contacto">
+      <div class="contenedor">
+
+        <span class="etiqueta">Hablemos</span>
+
+        <h2>¿Tienes un proyecto en mente?</h2>
+
+        <p>
+          Si buscas colaboración profesional en selección, formación,
+          igualdad o gestión de personas, estaré encantada de conocer
+          tu propuesta.
+        </p>
+
+        <p>
+          Cuéntame qué necesitas y podremos valorar cómo colaborar.
+        </p>
+
+        <a class="boton" href="mailto:TU_CORREO_PROFESIONAL">
+          Contactar por email
+        </a>
+
+        <p>
+          <a class="linkedin" href="TU_URL_DE_LINKEDIN"
+             target="_blank" rel="noopener">
+            Visita mi perfil de LinkedIn
+          </a>
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      <span>Cuidar es transformar.</span>
+      <span>Personas. Organizaciones. Transformación.</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>
