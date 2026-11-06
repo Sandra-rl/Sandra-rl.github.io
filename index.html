@@ -4,21 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sandra Román Luque. Formación, selección, gestión de personas, igualdad, diversidad y prevención del acoso desde una perspectiva social y organizacional.">
-  <meta name="theme-color" content="#355746">
+
   <title>Sandra Román Luque | Cuidar es transformar</title>
+
+  <meta name="description" content="Sandra Román Luque. Profesional de Recursos Humanos, formación, igualdad y transformación organizacional. Un enfoque humano y estratégico de la gestión de personas.">
+  <meta name="author" content="Sandra Román Luque">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#355746">
 
   <style>
     :root {
       --forest: #355746;
-      --sage: #A8BDA9;
-      --cream: #F2F0E8;
-      --terracotta: #C28D70;
-      --white: #FFFFFF;
-      --ink: #26352D;
-      --muted: #69766E;
-      --line: #DDE3DC;
-      --soft: #F8F8F4;
+      --forest-dark: #263f34;
+      --sage: #a8bda9;
+      --cream: #f2f0e8;
+      --terracotta: #c28d70;
+      --white: #ffffff;
+      --text: #303a34;
+      --muted: #68736b;
+      --line: #dedfd7;
+      --max-width: 1160px;
     }
 
     * {
@@ -34,15 +39,9 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: var(--ink);
-      background: var(--white);
+      color: var(--text);
+      background: var(--cream);
       line-height: 1.7;
-    }
-
-    h1, h2, h3 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 400;
-      line-height: 1.2;
     }
 
     a {
@@ -50,17 +49,38 @@
       text-decoration: none;
     }
 
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
     .container {
-      width: min(1120px, 90%);
+      width: min(90%, var(--max-width));
       margin: 0 auto;
     }
 
     .eyebrow {
-      color: var(--terracotta);
+      color: var(--forest);
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 0.75rem;
+      font-size: 0.76rem;
       font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.1rem);
+      color: var(--forest-dark);
+      margin-bottom: 24px;
+    }
+
+    p {
       margin-bottom: 16px;
     }
 
@@ -68,36 +88,77 @@
       padding: 100px 0;
     }
 
-    .section-heading {
+    .section-intro {
       max-width: 720px;
-      margin-bottom: 48px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(2.1rem, 4vw, 3.2rem);
-      color: var(--forest);
-      margin-bottom: 20px;
-    }
-
-    .section-heading p {
       color: var(--muted);
       font-size: 1.05rem;
     }
 
+    /* NAVEGACIÓN */
+
+    header {
+      background: rgba(242, 240, 232, 0.96);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(10px);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      color: var(--forest);
+      font-family: Georgia, serif;
+      font-size: 1.35rem;
+      line-height: 1.1;
+    }
+
+    .brand small {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 0.66rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 5px;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      font-size: 0.83rem;
+      color: var(--text);
+    }
+
+    nav a:hover {
+      color: var(--terracotta);
+    }
+
+    /* BOTONES */
+
     .button {
       display: inline-block;
-      padding: 14px 24px;
+      padding: 13px 23px;
       border: 1px solid var(--forest);
       background: var(--forest);
       color: var(--white);
-      border-radius: 3px;
-      font-size: 0.9rem;
-      transition: 0.25s ease;
+      font-size: 0.88rem;
+      transition: 0.2s ease;
     }
 
     .button:hover {
-      background: transparent;
-      color: var(--forest);
+      background: var(--forest-dark);
     }
 
     .button-outline {
@@ -110,196 +171,155 @@
       color: var(--white);
     }
 
-    /* NAVEGACIÓN */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: rgba(255,255,255,0.96);
-      border-bottom: 1px solid var(--line);
-      backdrop-filter: blur(10px);
-    }
-
-    .navbar {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      color: var(--forest);
-      font-family: Georgia, serif;
-      font-size: 1.35rem;
-      white-space: nowrap;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      gap: 25px;
-    }
-
-    nav a {
-      font-size: 0.82rem;
-      color: var(--muted);
-      transition: color 0.2s;
-    }
-
-    nav a:hover {
-      color: var(--forest);
-    }
-
-    /* PORTADA */
+    /* HERO */
 
     .hero {
+      padding: 90px 0 100px;
       background: var(--cream);
-      padding: 90px 0;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.2fr 0.8fr;
       align-items: center;
-      gap: 70px;
+      gap: 65px;
     }
 
     .hero h1 {
-      color: var(--forest);
-      font-size: clamp(2.8rem, 5.5vw, 5rem);
-      margin-bottom: 24px;
-      max-width: 720px;
+      font-size: clamp(2.8rem, 6vw, 5.2rem);
+      color: var(--forest-dark);
+      max-width: 780px;
+      margin-bottom: 25px;
     }
 
-    .hero-description {
-      font-size: 1.12rem;
-      color: #536259;
+    .hero h1 span {
+      color: var(--terracotta);
+    }
+
+    .hero-text {
       max-width: 620px;
+      color: var(--muted);
+      font-size: 1.08rem;
       margin-bottom: 30px;
     }
 
     .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 12px;
     }
 
-    .hero-image {
+    .hero-photo {
+      background: var(--sage);
+      padding: 14px;
+      max-width: 410px;
+      margin-left: auto;
+    }
+
+    .hero-photo img {
       width: 100%;
-      max-width: 440px;
       aspect-ratio: 4 / 5;
       object-fit: cover;
-      display: block;
-      margin-left: auto;
-      border-radius: 2px;
-      background: var(--sage);
+      object-position: center;
     }
 
-    .hero-caption {
-      color: var(--muted);
-      font-size: 0.78rem;
-      text-align: right;
-      margin-top: 12px;
+    .photo-caption {
+      padding: 13px 5px 3px;
+      color: var(--forest-dark);
+      font-family: Georgia, serif;
+      font-size: 1.05rem;
     }
 
     /* SOBRE MÍ */
 
+    .about {
+      background: var(--white);
+    }
+
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 75px;
       align-items: start;
     }
 
-    .about-copy p {
-      margin-bottom: 18px;
-      color: #536259;
+    .about-aside {
+      background: var(--forest);
+      color: var(--white);
+      padding: 38px;
     }
 
-    .about-highlight {
-      background: var(--soft);
-      border-left: 3px solid var(--terracotta);
-      padding: 28px;
-      color: var(--forest);
-      font-family: Georgia, serif;
-      font-size: 1.35rem;
-      line-height: 1.5;
-      margin-top: 28px;
+    .about-aside h3 {
+      font-size: 1.8rem;
+      margin-bottom: 18px;
+    }
+
+    .about-aside p {
+      color: #e3e9e2;
     }
 
     .education {
-      background: var(--cream);
-      padding: 34px;
+      margin-top: 30px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(255,255,255,0.3);
     }
 
     .education h3 {
-      color: var(--forest);
-      font-size: 1.65rem;
-      margin-bottom: 24px;
+      font-size: 1.35rem;
+      margin-bottom: 16px;
     }
 
     .education ul {
-      list-style: none;
+      padding-left: 19px;
     }
 
     .education li {
-      padding: 15px 0;
-      border-bottom: 1px solid #D9DED5;
-      color: var(--ink);
+      margin-bottom: 12px;
+      color: #e3e9e2;
+      font-size: 0.91rem;
     }
 
-    .education li:last-child {
-      border-bottom: none;
-    }
-
-    /* ÁREAS PROFESIONALES */
+    /* ÁREAS */
 
     .areas {
-      background: var(--soft);
+      background: var(--cream);
     }
 
-    .areas-grid {
+    .area-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      gap: 20px;
+      margin-top: 45px;
     }
 
     .area-card {
       background: var(--white);
-      padding: 34px;
-      border: 1px solid var(--line);
-      transition: transform 0.25s, box-shadow 0.25s;
-    }
-
-    .area-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(40,60,45,0.07);
+      padding: 36px;
+      border-top: 3px solid var(--sage);
     }
 
     .area-number {
       color: var(--terracotta);
       font-family: Georgia, serif;
-      font-size: 1.2rem;
-      margin-bottom: 15px;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
     }
 
     .area-card h3 {
       color: var(--forest);
-      font-size: 1.7rem;
-      margin-bottom: 16px;
+      font-size: 1.65rem;
+      margin-bottom: 15px;
     }
 
     .area-card p {
       color: var(--muted);
-      margin-bottom: 18px;
+      font-size: 0.95rem;
     }
 
     .area-card ul {
-      padding-left: 20px;
-      color: #536259;
-      font-size: 0.92rem;
+      padding-left: 19px;
+      color: var(--text);
+      font-size: 0.91rem;
     }
 
     .area-card li {
@@ -308,263 +328,267 @@
 
     /* METODOLOGÍA */
 
-    .method-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 18px;
+    .methodology {
+      background: var(--forest);
+      color: var(--white);
     }
 
-    .method-step {
-      border-top: 2px solid var(--sage);
+    .methodology h2 {
+      color: var(--white);
+    }
+
+    .methodology .eyebrow {
+      color: var(--sage);
+    }
+
+    .methodology .section-intro {
+      color: #e1e8e0;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 25px;
+      margin-top: 55px;
+    }
+
+    .step {
+      border-top: 1px solid var(--sage);
       padding-top: 20px;
     }
 
-    .method-step span {
-      color: var(--terracotta);
+    .step strong {
+      display: block;
+      color: var(--sage);
       font-family: Georgia, serif;
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+      margin-bottom: 12px;
     }
 
-    .method-step h3 {
-      color: var(--forest);
-      font-size: 1.35rem;
-      margin: 12px 0;
+    .step h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
     }
 
-    .method-step p {
-      color: var(--muted);
-      font-size: 0.9rem;
+    .step p {
+      color: #e1e8e0;
+      font-size: 0.88rem;
+    }
+
+    /* COLABORACIÓN */
+
+    .collaboration {
+      background: var(--sage);
+    }
+
+    .collaboration-content {
+      max-width: 850px;
+    }
+
+    .collaboration h2 {
+      max-width: 700px;
+    }
+
+    .collaboration-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px 35px;
+      margin: 30px 0;
+    }
+
+    .collaboration-list div {
+      border-bottom: 1px solid rgba(53,87,70,0.3);
+      padding: 13px 0;
+      color: var(--forest-dark);
     }
 
     /* PORTFOLIO */
 
     .portfolio {
-      background: var(--cream);
+      background: var(--white);
     }
 
     .portfolio-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      margin-top: 40px;
     }
 
-    .portfolio-card {
-      background: var(--white);
+    .portfolio-item {
       padding: 30px;
       border: 1px solid var(--line);
+      background: #fbfaf6;
     }
 
-    .portfolio-card h3 {
+    .portfolio-item h3 {
+      font-size: 1.45rem;
       color: var(--forest);
-      font-size: 1.5rem;
       margin-bottom: 12px;
     }
 
-    .portfolio-card p {
+    .portfolio-item p {
       color: var(--muted);
-      margin-bottom: 18px;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
 
-    .portfolio-link {
+    .document-link {
+      display: inline-block;
+      margin-top: 10px;
       color: var(--forest);
-      font-size: 0.88rem;
-      font-weight: bold;
       border-bottom: 1px solid var(--terracotta);
       padding-bottom: 3px;
+      font-size: 0.9rem;
+      font-weight: 700;
     }
 
     .portfolio-note {
       margin-top: 25px;
-      font-size: 0.85rem;
       color: var(--muted);
-    }
-
-    /* COLABORACIÓN */
-
-    .collaboration {
-      background: var(--forest);
-      color: var(--white);
-    }
-
-    .collaboration .eyebrow {
-      color: var(--sage);
-    }
-
-    .collaboration h2 {
-      color: var(--white);
-      font-size: clamp(2.2rem, 4vw, 3.3rem);
-      max-width: 760px;
-      margin-bottom: 24px;
-    }
-
-    .collaboration p {
-      color: #E0E8E0;
-      max-width: 760px;
-      margin-bottom: 18px;
-    }
-
-    .collaboration .button {
-      background: var(--white);
-      color: var(--forest);
-      border-color: var(--white);
-      margin-top: 14px;
-    }
-
-    .collaboration .button:hover {
-      background: transparent;
-      color: var(--white);
+      font-size: 0.84rem;
     }
 
     /* CONTACTO */
 
+    .contact {
+      background: var(--cream);
+    }
+
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 50px;
+      gap: 60px;
+      align-items: center;
     }
 
-    .contact-copy h2 {
-      color: var(--forest);
-      font-size: 2.7rem;
-      margin-bottom: 20px;
+    .contact-card {
+      background: var(--white);
+      padding: 35px;
     }
 
-    .contact-copy p {
-      color: var(--muted);
-      margin-bottom: 20px;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
-      padding: 30px;
-      background: var(--soft);
-    }
-
-    .contact-links a {
+    .contact-card a {
+      display: block;
+      margin: 15px 0;
       color: var(--forest);
       overflow-wrap: anywhere;
     }
 
-    .contact-links strong {
-      display: block;
-      font-size: 0.75rem;
-      color: var(--terracotta);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      margin-bottom: 4px;
-    }
-
-    /* AVISO LEGAL */
+    /* LEGAL */
 
     .legal {
-      background: var(--soft);
-      padding: 55px 0;
+      background: #e9e8df;
+      padding: 65px 0;
     }
 
     .legal h2 {
-      font-size: 1.7rem;
-      color: var(--forest);
-      margin-bottom: 20px;
+      font-size: 2rem;
     }
 
     .legal h3 {
       color: var(--forest);
       font-family: Arial, sans-serif;
-      font-size: 0.95rem;
-      font-weight: bold;
-      margin: 22px 0 8px;
+      font-size: 1rem;
+      font-weight: 700;
+      margin: 30px 0 10px;
     }
 
-    .legal p {
-      color: var(--muted);
-      font-size: 0.82rem;
-      margin-bottom: 12px;
+    .legal p, .legal li {
+      font-size: 0.87rem;
+      color: #566158;
     }
+
+    .legal ul {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .legal a {
+      text-decoration: underline;
+      overflow-wrap: anywhere;
+    }
+
+    /* FOOTER */
 
     footer {
-      background: #263D32;
-      color: #E8EEE8;
-      padding: 28px 0;
+      background: var(--forest-dark);
+      color: var(--white);
+      padding: 30px 0;
       font-size: 0.82rem;
     }
 
     .footer-content {
       display: flex;
       justify-content: space-between;
+      gap: 20px;
       flex-wrap: wrap;
-      gap: 15px;
+    }
+
+    footer a {
+      color: var(--sage);
     }
 
     /* RESPONSIVE */
 
     @media (max-width: 850px) {
-      .navbar {
-        flex-direction: column;
-        padding: 16px 0;
-      }
-
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 18px;
-      }
-
       .hero-grid,
       .about-grid,
       .contact-grid {
         grid-template-columns: 1fr;
-        gap: 38px;
       }
 
-      .hero-image {
-        margin: 0 auto;
-        max-width: 390px;
+      .hero-photo {
+        margin: 0;
+        max-width: 420px;
       }
 
-      .hero-caption {
-        text-align: center;
-      }
-
-      .method-grid {
+      .steps {
         grid-template-columns: repeat(2, 1fr);
+      }
+
+      nav {
+        gap: 12px;
       }
     }
 
-    @media (max-width: 580px) {
+    @media (max-width: 600px) {
       .section {
         padding: 70px 0;
+      }
+
+      .navbar {
+        padding: 15px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      nav {
+        gap: 12px 18px;
+      }
+
+      nav a {
+        font-size: 0.78rem;
       }
 
       .hero {
         padding: 65px 0;
       }
 
-      .areas-grid,
+      .area-grid,
       .portfolio-grid,
-      .method-grid {
+      .collaboration-list,
+      .steps {
         grid-template-columns: 1fr;
       }
 
       .area-card,
-      .portfolio-card,
-      .education {
+      .about-aside,
+      .portfolio-item,
+      .contact-card {
         padding: 25px;
       }
 
-      .hero-actions {
+      .footer-content {
         flex-direction: column;
-        align-items: stretch;
-      }
-
-      .hero-actions .button {
-        text-align: center;
-      }
-
-      .brand {
-        font-size: 1.2rem;
       }
     }
   </style>
@@ -574,7 +598,10 @@
 
   <header>
     <div class="container navbar">
-      <a class="brand" href="#inicio">Cuidar es transformar</a>
+      <a class="brand" href="#inicio">
+        Cuidar es transformar
+        <small>Sandra Román Luque</small>
+      </a>
 
       <nav aria-label="Navegación principal">
         <a href="#sobre-mi">Sobre mí</a>
@@ -588,20 +615,25 @@
 
   <main>
 
-    <!-- PORTADA -->
+    <!-- INICIO -->
 
     <section class="hero" id="inicio">
       <div class="container hero-grid">
 
         <div>
-          <p class="eyebrow">Sandra Román Luque · Perfil profesional</p>
+          <p class="eyebrow">Personas · Organizaciones · Transformación</p>
 
-          <h1>Las organizaciones se transforman cuando ponen a las personas en el centro.</h1>
+          <h1>
+            Las organizaciones se transforman cuando
+            <span>ponen a las personas en el centro.</span>
+          </h1>
 
-          <p class="hero-description">
-            Una mirada profesional que conecta la gestión de personas,
-            la formación, la igualdad y la transformación organizacional
-            desde una perspectiva social y humana.
+          <p class="hero-text">
+            Soy Sandra Román Luque. Mi trayectoria conecta el Trabajo Social,
+            la educación, la formación y la gestión de personas.
+            Trabajo desde una mirada estratégica y humana para contribuir
+            a organizaciones más inclusivas, responsables y comprometidas
+            con el desarrollo de sus equipos.
           </p>
 
           <div class="hero-actions">
@@ -610,13 +642,12 @@
           </div>
         </div>
 
-        <div>
+        <div class="hero-photo">
           <img
-            class="hero-image"
-            src="imagenes/sandra-román-luque-web.jpg"
-            alt="Sandra Román Luque"
+            src="imagenes/sandra-roman-luque.jpg"
+            alt="Fotografía profesional de Sandra Román Luque"
           >
-          <p class="hero-caption">Personas, organizaciones y transformación.</p>
+          <div class="photo-caption">Sandra Román Luque · Personas y organizaciones</div>
         </div>
 
       </div>
@@ -624,63 +655,64 @@
 
     <!-- SOBRE MÍ -->
 
-    <section class="section" id="sobre-mi">
-      <div class="container">
+    <section class="section about" id="sobre-mi">
+      <div class="container about-grid">
 
-        <div class="section-heading">
-          <p class="eyebrow">Conóceme</p>
-          <h2>Una trayectoria que conecta lo social, lo educativo y lo organizacional.</h2>
+        <div>
+          <p class="eyebrow">Mi trayectoria</p>
+          <h2>Una mirada social para transformar las organizaciones.</h2>
+
+          <p>
+            Creo en una forma de entender las organizaciones en la que
+            los resultados y el cuidado de las personas no son objetivos
+            opuestos.
+          </p>
+
+          <p>
+            Mi recorrido académico y profesional se ha construido en la
+            intersección entre la intervención social, la educación,
+            la igualdad y la gestión de personas.
+          </p>
+
+          <p>
+            Esta perspectiva me permite abordar los retos organizativos
+            desde una visión amplia: comprender los contextos, identificar
+            necesidades, acompañar procesos y diseñar respuestas que
+            tengan sentido para las personas y para las organizaciones.
+          </p>
+
+          <p>
+            Me interesa especialmente la formación corporativa, el desarrollo
+            de equipos, la selección de personas, la igualdad y la prevención
+            de situaciones de discriminación y acoso.
+          </p>
         </div>
 
-        <div class="about-grid">
+        <aside class="about-aside">
+          <h3>Mi forma de entender el trabajo</h3>
 
-          <div class="about-copy">
-            <p>
-              Soy Sandra Román Luque. Mi trayectoria profesional y académica
-              se ha desarrollado en torno a las personas, la educación,
-              la igualdad de oportunidades y el desarrollo de entornos
-              organizativos más justos y saludables.
-            </p>
+          <p>
+            Cuidar no es una declaración de intenciones. Es una manera
+            de organizar, liderar, formar, comunicar y tomar decisiones.
+          </p>
 
-            <p>
-              Mi formación multidisciplinar me permite abordar la gestión
-              de personas desde diferentes perspectivas: la social,
-              la educativa y la organizacional.
-            </p>
-
-            <p>
-              Me interesan especialmente los procesos de selección,
-              el desarrollo del talento, la formación corporativa,
-              la igualdad, la diversidad y la prevención de situaciones
-              de acoso en el entorno laboral.
-            </p>
-
-            <p>
-              Entiendo que cuidar a las personas dentro de una organización
-              no es una cuestión accesoria: es una responsabilidad que
-              influye en la cultura, las relaciones, el bienestar y
-              los resultados colectivos.
-            </p>
-
-            <div class="about-highlight">
-              “Cuidar es transformar: convertir la atención a las personas
-              en una forma de construir organizaciones mejores”.
-            </div>
-          </div>
+          <p>
+            Significa construir entornos donde las personas puedan
+            desarrollarse, participar y trabajar con dignidad.
+          </p>
 
           <div class="education">
             <h3>Formación académica</h3>
-
             <ul>
-              <li>Grado en Trabajo Social</li>
-              <li>Técnica Superior en Integración Social</li>
-              <li>Promoción de Igualdad de Género</li>
-              <li>Magisterio – Educación Primaria</li>
-              <li>Máster Universitario de Profesorado de Educación Secundaria</li>
+              <li>Grado en Trabajo Social.</li>
+              <li>Técnica Superior en Integración Social.</li>
+              <li>Promoción de Igualdad de Género.</li>
+              <li>Magisterio – Educación Primaria.</li>
+              <li>Máster Universitario de Profesorado de Educación Secundaria.</li>
             </ul>
           </div>
+        </aside>
 
-        </div>
       </div>
     </section>
 
@@ -689,31 +721,28 @@
     <section class="section areas" id="areas">
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">Ámbitos de especialización</p>
-          <h2>Áreas profesionales</h2>
-          <p>
-            Cuatro ámbitos conectados por una misma visión:
-            desarrollar entornos de trabajo donde las personas
-            puedan crecer y las organizaciones puedan avanzar.
-          </p>
-        </div>
+        <p class="eyebrow">Ámbitos de especialización</p>
+        <h2>Personas, talento y cultura organizacional.</h2>
 
-        <div class="areas-grid">
+        <p class="section-intro">
+          Una combinación de competencias sociales, educativas y organizativas
+          aplicada a los principales retos de la gestión de personas.
+        </p>
+
+        <div class="area-grid">
 
           <article class="area-card">
             <div class="area-number">01</div>
             <h3>Selección y gestión del talento</h3>
             <p>
-              Procesos de identificación, valoración y selección de personas,
-              atendiendo tanto a las competencias profesionales como
-              a las necesidades de cada organización.
+              Procesos de identificación, evaluación y acompañamiento
+              de personas en el ámbito laboral.
             </p>
             <ul>
-              <li>Análisis de puestos y perfiles profesionales.</li>
-              <li>Cribado y preselección de candidaturas.</li>
+              <li>Cribado y preselección curricular.</li>
               <li>Entrevistas por competencias.</li>
-              <li>Evaluación de candidaturas e informes.</li>
+              <li>Evaluación y adecuación de perfiles.</li>
+              <li>Informes de selección.</li>
               <li>Orientación e intermediación sociolaboral.</li>
             </ul>
           </article>
@@ -722,16 +751,15 @@
             <div class="area-number">02</div>
             <h3>Formación corporativa y desarrollo</h3>
             <p>
-              Diseño y desarrollo de experiencias formativas orientadas
-              a mejorar las competencias, las relaciones profesionales
-              y el funcionamiento de los equipos.
+              Diseño de experiencias de aprendizaje conectadas
+              con las necesidades reales de las organizaciones.
             </p>
             <ul>
-              <li>Diseño de programas y acciones formativas.</li>
+              <li>Diseño y planificación de acciones formativas.</li>
               <li>Formación presencial y online.</li>
               <li>Elaboración de materiales didácticos.</li>
-              <li>Diseño de contenidos para e-learning.</li>
-              <li>Desarrollo de equipos y liderazgo responsable.</li>
+              <li>Desarrollo de competencias profesionales.</li>
+              <li>Formación para equipos y liderazgo.</li>
               <li>Evaluación del aprendizaje.</li>
             </ul>
           </article>
@@ -740,16 +768,15 @@
             <div class="area-number">03</div>
             <h3>Igualdad, diversidad y prevención del acoso</h3>
             <p>
-              Promoción de entornos laborales seguros, inclusivos
-              y respetuosos, desde la sensibilización, la formación
-              y la prevención.
+              Promoción de entornos de trabajo seguros, respetuosos
+              e inclusivos.
             </p>
             <ul>
               <li>Formación en igualdad y diversidad.</li>
               <li>Prevención del acoso laboral y sexual.</li>
+              <li>Sensibilización y cultura preventiva.</li>
               <li>Apoyo técnico y documental en protocolos.</li>
-              <li>Acciones de sensibilización.</li>
-              <li>Promoción de una cultura organizativa inclusiva.</li>
+              <li>Promoción de la inclusión sociolaboral.</li>
             </ul>
           </article>
 
@@ -757,79 +784,109 @@
             <div class="area-number">04</div>
             <h3>Personas y organizaciones</h3>
             <p>
-              Comprensión de las dinámicas organizativas y de las
-              necesidades de las personas para contribuir a entornos
-              de trabajo más saludables y sostenibles.
+              Comprensión de las dinámicas organizativas y desarrollo
+              de entornos de trabajo más saludables y participativos.
             </p>
             <ul>
               <li>Análisis de necesidades organizativas.</li>
               <li>Desarrollo y acompañamiento de equipos.</li>
-              <li>Bienestar y relaciones laborales.</li>
+              <li>Bienestar y cuidado en el entorno laboral.</li>
               <li>Gestión de personas y procesos.</li>
-              <li>Participación en proyectos organizativos.</li>
+              <li>Diseño y seguimiento de proyectos.</li>
             </ul>
           </article>
 
         </div>
-
-        <p class="portfolio-note">
-          Las actuaciones relacionadas con protocolos de acoso y prevención
-          se desarrollan dentro del ámbito de competencia profesional
-          correspondiente y no sustituyen el asesoramiento jurídico
-          ni las intervenciones especializadas que puedan ser necesarias.
-        </p>
-
       </div>
     </section>
 
     <!-- METODOLOGÍA -->
 
-    <section class="section" id="metodologia">
+    <section class="section methodology" id="metodologia">
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">Forma de trabajar</p>
-          <h2>Comprender antes de transformar.</h2>
-          <p>
-            Cada organización tiene su propia realidad. Por eso,
-            cualquier intervención debe partir de la escucha,
-            el análisis y la comprensión del contexto.
-          </p>
-        </div>
+        <p class="eyebrow">Mi metodología</p>
+        <h2>Comprender antes de transformar.</h2>
 
-        <div class="method-grid">
+        <p class="section-intro">
+          Cada organización tiene una realidad propia. Por eso, cualquier
+          intervención debe partir de la escucha, el análisis y la comprensión
+          de su contexto.
+        </p>
 
-          <div class="method-step">
-            <span>01</span>
+        <div class="steps">
+
+          <div class="step">
+            <strong>01</strong>
             <h3>Escuchar</h3>
-            <p>Conocer a las personas, sus necesidades y sus expectativas.</p>
+            <p>Conocer a las personas, sus necesidades y sus experiencias.</p>
           </div>
 
-          <div class="method-step">
-            <span>02</span>
+          <div class="step">
+            <strong>02</strong>
             <h3>Analizar</h3>
-            <p>Comprender el contexto, detectar necesidades y establecer prioridades.</p>
+            <p>Comprender el contexto, detectar necesidades y definir prioridades.</p>
           </div>
 
-          <div class="method-step">
-            <span>03</span>
+          <div class="step">
+            <strong>03</strong>
             <h3>Diseñar</h3>
-            <p>Plantear respuestas coherentes con los objetivos y la realidad organizativa.</p>
+            <p>Plantear respuestas realistas, adaptadas y orientadas a objetivos.</p>
           </div>
 
-          <div class="method-step">
-            <span>04</span>
+          <div class="step">
+            <strong>04</strong>
             <h3>Desarrollar</h3>
-            <p>Participar en la puesta en marcha de acciones y procesos.</p>
+            <p>Impulsar acciones formativas y organizativas con sentido práctico.</p>
           </div>
 
-          <div class="method-step">
-            <span>05</span>
+          <div class="step">
+            <strong>05</strong>
             <h3>Evaluar</h3>
-            <p>Revisar resultados, identificar mejoras y favorecer el aprendizaje.</p>
+            <p>Revisar resultados, identificar mejoras y favorecer la continuidad.</p>
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <!-- COLABORACIÓN -->
+
+    <section class="section collaboration" id="colaboracion">
+      <div class="container collaboration-content">
+
+        <p class="eyebrow">Oportunidades profesionales</p>
+        <h2>Abierta a nuevos proyectos, equipos y organizaciones.</h2>
+
+        <p>
+          Me interesa formar parte de entornos profesionales que entiendan
+          la gestión de personas como una función estratégica y que apuesten
+          por la formación, la igualdad y el desarrollo organizacional.
+        </p>
+
+        <p>
+          Estoy abierta a oportunidades laborales, procesos de selección
+          y colaboraciones profesionales con empresas, consultoras,
+          entidades y equipos de Recursos Humanos.
+        </p>
+
+        <div class="collaboration-list">
+          <div>Selección y gestión del talento</div>
+          <div>Formación corporativa</div>
+          <div>Igualdad y diversidad</div>
+          <div>Prevención del acoso</div>
+          <div>Desarrollo de equipos</div>
+          <div>Proyectos de transformación organizacional</div>
+        </div>
+
+        <p>
+          Especialmente interesada en oportunidades en remoto y en proyectos
+          que permitan colaborar con equipos y organizaciones de distintos
+          territorios.
+        </p>
+
+        <a class="button" href="#contacto">Contactar</a>
+
       </div>
     </section>
 
@@ -838,209 +895,279 @@
     <section class="section portfolio" id="portfolio">
       <div class="container">
 
-        <div class="section-heading">
-          <p class="eyebrow">Trabajo y documentación</p>
-          <h2>Portfolio profesional</h2>
-          <p>
-            Una selección de materiales y ejemplos que permiten conocer
-            mi enfoque de trabajo, mi capacidad de diseño y mi manera
-            de abordar diferentes necesidades profesionales.
-          </p>
-        </div>
+        <p class="eyebrow">Portfolio profesional</p>
+        <h2>Una muestra de mi trabajo.</h2>
+
+        <p class="section-intro">
+          Este espacio reúne ejemplos de materiales, propuestas y documentos
+          vinculados a mis ámbitos de especialización. Los documentos
+          identificados como modelos son muestras elaboradas con finalidad
+          demostrativa.
+        </p>
 
         <div class="portfolio-grid">
 
-          <article class="portfolio-card">
-            <h3>Catálogo de ámbitos profesionales</h3>
+          <article class="portfolio-item">
+            <h3>Ámbitos de trabajo y competencias</h3>
             <p>
-              Documento de presentación de las principales áreas
-              de especialización, competencias y líneas de trabajo.
+              Documento de presentación de las principales áreas profesionales,
+              competencias y líneas de especialización.
             </p>
-            <a class="portfolio-link" href="documentos/catalogo-servicios.pdf" target="_blank" rel="noopener">
+            <a class="document-link"
+               href="documentos/catalogo-servicios.pdf"
+               target="_blank" rel="noopener">
               Consultar documento →
             </a>
           </article>
 
-          <article class="portfolio-card">
-            <h3>Índice de protocolo de prevención del acoso</h3>
+          <article class="portfolio-item">
+            <h3>Protocolo de prevención del acoso</h3>
             <p>
-              Estructura documental orientativa para abordar la prevención,
-              los canales de comunicación, el procedimiento y las garantías
-              de protección.
+              Estructura de referencia para la elaboración de un protocolo
+              de prevención y actuación frente al acoso en el entorno laboral.
             </p>
-            <a class="portfolio-link" href="documentos/indice-protocolo-acoso.pdf" target="_blank" rel="noopener">
-              Consultar documento →
+            <a class="document-link"
+               href="documentos/indice-protocolo-acoso.pdf"
+               target="_blank" rel="noopener">
+              Consultar índice →
             </a>
           </article>
 
-          <article class="portfolio-card">
+          <article class="portfolio-item">
             <h3>Programa formativo: prevención del acoso laboral</h3>
             <p>
-              Ejemplo de planificación didáctica con objetivos,
-              contenidos, metodología, actividades y evaluación.
+              Ejemplo de planificación didáctica con objetivos, contenidos,
+              metodología, actividades y evaluación.
             </p>
-            <a class="portfolio-link" href="documentos/programa-formativo-acoso.pdf" target="_blank" rel="noopener">
-              Consultar documento →
+            <a class="document-link"
+               href="documentos/programa-formativo-acoso.pdf"
+               target="_blank" rel="noopener">
+              Consultar programa →
             </a>
           </article>
 
-          <article class="portfolio-card">
+          <article class="portfolio-item">
             <h3>Ejemplo de informe de selección</h3>
             <p>
               Modelo ficticio de evaluación de candidaturas mediante
-              competencias, criterios de valoración y conclusiones.
+              competencias, criterios ponderados y conclusiones.
             </p>
-            <a class="portfolio-link" href="documentos/ejemplo-informe-seleccion.pdf" target="_blank" rel="noopener">
-              Consultar documento →
+            <a class="document-link"
+               href="documentos/ejemplo-informe-seleccion.pdf"
+               target="_blank" rel="noopener">
+              Consultar ejemplo →
             </a>
           </article>
 
         </div>
 
         <p class="portfolio-note">
-          Los documentos de ejemplo tienen carácter demostrativo.
-          Los casos y datos incluidos en el ejemplo de selección son ficticios.
-          Los materiales relacionados con protocolos requieren adaptación
-          y revisión por profesionales competentes antes de su aplicación.
+          Los ejemplos de selección utilizan datos ficticios. Los documentos
+          de protocolos y prevención tienen carácter orientativo y requieren
+          adaptación al contexto de cada organización y revisión por los
+          profesionales competentes.
         </p>
-
-      </div>
-    </section>
-
-    <!-- COLABORACIÓN -->
-
-    <section class="section collaboration" id="colaboracion">
-      <div class="container">
-
-        <p class="eyebrow">Oportunidades profesionales</p>
-
-        <h2>Me interesa formar parte de proyectos que sitúen a las personas en el centro.</h2>
-
-        <p>
-          Estoy abierta a oportunidades profesionales en departamentos
-          de Recursos Humanos, consultoras, empresas, entidades y
-          organizaciones que trabajen en selección, formación,
-          igualdad y desarrollo organizacional.
-        </p>
-
-        <p>
-          Me interesan especialmente los proyectos que permitan aportar
-          una perspectiva social y educativa a la gestión de personas,
-          así como las oportunidades de trabajo en remoto y la colaboración
-          con equipos multidisciplinares.
-        </p>
-
-        <p>
-          Estoy abierta a distintas fórmulas de colaboración profesional
-          y contratación, siempre dentro de los marcos laborales,
-          fiscales y de Seguridad Social que correspondan.
-        </p>
-
-        <a class="button" href="#contacto">Hablemos de una oportunidad</a>
 
       </div>
     </section>
 
     <!-- CONTACTO -->
 
-    <section class="section" id="contacto">
+    <section class="section contact" id="contacto">
       <div class="container contact-grid">
 
-        <div class="contact-copy">
+        <div>
           <p class="eyebrow">Contacto</p>
-          <h2>¿Hablamos?</h2>
+          <h2>Las buenas transformaciones empiezan con una conversación.</h2>
 
           <p>
-            Si quieres conocer mejor mi perfil, compartir una oportunidad
-            profesional o explorar una posible colaboración, estaré
-            encantada de recibir tu mensaje.
+            Si representas a una organización, formas parte de un equipo
+            de Recursos Humanos o quieres compartir una oportunidad
+            profesional, estaré encantada de conocerte.
           </p>
 
           <p>
-            Puedes contactar conmigo por correo electrónico o a través
-            de LinkedIn.
+            Puedes escribirme por correo electrónico o conectar conmigo
+            a través de LinkedIn.
           </p>
         </div>
 
-        <div class="contact-links">
+        <div class="contact-card">
+          <h3>Hablemos</h3>
 
-          <div>
-            <strong>Correo electrónico</strong>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=sandrarolu90%40gmail.com&su=Oportunidad%20profesional"
-              target="_blank"
-              rel="noopener"
-            >
-              sandrarolu90@gmail.com
-            </a>
-          </div>
+          <a href="mailto:sandrarolu90@gmail.com?subject=Oportunidad%20profesional">
+            sandrarolu90@gmail.com
+          </a>
 
-          <div>
-            <strong>LinkedIn</strong>
-            <a
-              href="https://www.linkedin.com/in/sandraromanluque"
-              target="_blank"
-              rel="noopener"
-            >
-              linkedin.com/in/sandraromanluque
-            </a>
-          </div>
+          <a href="https://www.linkedin.com/in/sandraromanluque"
+             target="_blank" rel="noopener noreferrer">
+            Mi perfil de LinkedIn →
+          </a>
 
+          <a class="button"
+             href="https://mail.google.com/mail/?view=cm&fs=1&to=sandrarolu90%40gmail.com&su=Oportunidad%20profesional"
+             target="_blank" rel="noopener noreferrer">
+            Enviar un mensaje
+          </a>
         </div>
 
       </div>
     </section>
 
-    <!-- INFORMACIÓN LEGAL -->
+    <!-- AVISO LEGAL Y PRIVACIDAD -->
 
-    <section class="legal" id="legal">
+    <section class="legal" id="privacidad">
       <div class="container">
 
-        <h2>Información legal y privacidad</h2>
+        <p class="eyebrow">Información legal</p>
+        <h2>Privacidad y condiciones de uso</h2>
 
-        <h3>Responsable del sitio web</h3>
         <p>
-          Este sitio web tiene carácter informativo y de presentación
-          profesional. Para completar el aviso legal deberán incorporarse
-          los datos identificativos y de contacto exigibles de la persona
-          titular del sitio.
+          Este sitio web es un portfolio personal de carácter informativo
+          y profesional, cuya finalidad es presentar la trayectoria,
+          formación, competencias y muestras de trabajo de Sandra Román Luque.
+          No constituye una tienda online ni permite contratar servicios
+          o realizar pagos a través de la página.
         </p>
 
-        <h3>Finalidad</h3>
+        <h3>1. Responsable del sitio web</h3>
+
         <p>
-          La finalidad de esta web es presentar el perfil profesional,
-          la formación, las áreas de especialización y los materiales
-          de portfolio de Sandra Román Luque, así como facilitar el
-          contacto para oportunidades profesionales.
+          Responsable: Sandra Román Luque.<br>
+          Correo electrónico: sandrarolu90@gmail.com.
         </p>
 
-        <h3>Protección de datos</h3>
         <p>
-          Esta web no incorpora formularios propios de recogida de datos.
-          Si una persona contacta mediante correo electrónico o LinkedIn,
-          el tratamiento de sus datos se realizará a través de los
-          respectivos servicios y con la finalidad de atender su comunicación.
+          Este sitio se publica mediante GitHub Pages. No se facilita
+          domicilio particular ni teléfono de contacto en este portfolio.
         </p>
 
-        <h3>Cookies y servicios de terceros</h3>
+        <h3>2. Finalidad del sitio</h3>
+
+        <p>
+          La finalidad es exclusivamente informativa: mostrar el perfil
+          profesional, la formación, las áreas de conocimiento y ejemplos
+          de trabajos. No se ofrecen procesos de contratación, pagos,
+          suscripciones ni venta de productos o servicios desde esta web.
+        </p>
+
+        <h3>3. Protección de datos personales</h3>
+
+        <p>
+          Este sitio no incorpora formularios propios de recogida de datos.
+          Si una persona decide contactar voluntariamente mediante correo
+          electrónico, los datos que incluya en su mensaje serán tratados
+          únicamente para atender la consulta, responder a la comunicación
+          o valorar la oportunidad profesional planteada.
+        </p>
+
+        <p>
+          La base jurídica será, según el caso, la adopción de medidas
+          precontractuales solicitadas por la persona interesada o el interés
+          legítimo en gestionar y responder a comunicaciones profesionales.
+          Los datos no se utilizarán para finalidades incompatibles ni se
+          cederán a terceros salvo obligación legal o necesidad vinculada
+          a la gestión del servicio de correo.
+        </p>
+
+        <p>
+          Los datos se conservarán durante el tiempo necesario para atender
+          la comunicación y, posteriormente, durante los plazos que puedan
+          resultar exigibles para atender responsabilidades legales.
+        </p>
+
+        <p>
+          La persona interesada puede solicitar el acceso, rectificación,
+          supresión, oposición, limitación del tratamiento y, cuando proceda,
+          portabilidad de sus datos escribiendo a
+          <a href="mailto:sandrarolu90@gmail.com">sandrarolu90@gmail.com</a>.
+          También puede presentar una reclamación ante la Agencia Española
+          de Protección de Datos:
+          <a href="https://www.aepd.es/"
+             target="_blank" rel="noopener noreferrer">www.aepd.es</a>.
+        </p>
+
+        <h3>4. Alojamiento, cookies y servicios de terceros</h3>
+
+        <p>
+          Esta página está alojada mediante GitHub Pages, servicio
+          proporcionado por GitHub, Inc. Cuando una persona visita
+          el sitio, GitHub puede recoger y registrar información técnica
+          de la conexión, incluida la dirección IP, por motivos de
+          seguridad, funcionamiento y prestación del servicio.
+        </p>
+
         <p>
           El código de esta web no incorpora herramientas propias de
-          analítica, publicidad ni seguimiento. El alojamiento y los
-          servicios externos enlazados pueden aplicar sus propias
-          tecnologías y políticas de privacidad.
-        </p>
-
-        <h3>Propiedad intelectual</h3>
-        <p>
-          Los textos y materiales originales publicados en este sitio
-          pertenecen a su autora, salvo que se indique expresamente
-          otra procedencia. No se autoriza su reproducción o distribución
-          sin el consentimiento correspondiente.
+          analítica, publicidad comportamental, seguimiento comercial
+          ni formularios de recogida de datos. Tampoco integra contenido
+          externo de reproducción o seguimiento.
         </p>
 
         <p>
-          Estos textos son una base informativa y deben revisarse y
-          completarse antes de considerar la web legalmente finalizada.
+          GitHub puede utilizar cookies y tecnologías similares en sus
+          servicios. La utilización concreta en este sitio depende de
+          la configuración del alojamiento y de los recursos cargados.
+          No se afirma que la página esté libre de todas las cookies
+          o tecnologías de terceros.
+        </p>
+
+        <p>
+          Para ampliar información, pueden consultarse la
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+             target="_blank" rel="noopener noreferrer">
+            Política de privacidad de GitHub
+          </a>
+          y su
+          <a href="https://docs.github.com/en/site-policy/privacy-policies/github-cookies"
+             target="_blank" rel="noopener noreferrer">
+            Política de cookies
+          </a>.
+        </p>
+
+        <p>
+          Esta web contiene enlaces externos a Gmail y LinkedIn. Al acceder
+          a dichas plataformas, la persona usuaria queda sujeta a sus
+          respectivas condiciones y políticas de privacidad.
+        </p>
+
+        <h3>5. Propiedad intelectual</h3>
+
+        <p>
+          Los textos, materiales y documentos originales publicados en
+          este portfolio pertenecen a su autora, salvo que se indique
+          expresamente otra procedencia. No se autoriza su reproducción
+          o utilización comercial sin consentimiento previo, sin perjuicio
+          de los derechos reconocidos por la normativa aplicable.
+        </p>
+
+        <h3>6. Documentos y ejemplos</h3>
+
+        <p>
+          Los documentos incluidos en el portfolio tienen finalidad
+          demostrativa e informativa. Los ejemplos ficticios no representan
+          casos reales ni contienen datos personales de candidaturas.
+          Los materiales sobre prevención del acoso no sustituyen la
+          adaptación normativa, técnica y organizativa que corresponda
+          en cada entidad.
+        </p>
+
+        <h3>7. Enlaces externos</h3>
+
+        <p>
+          Los enlaces a páginas de terceros se facilitan para ampliar
+          información o facilitar el contacto. La titular no controla
+          los contenidos, disponibilidad o políticas de privacidad
+          de dichos sitios.
+        </p>
+
+        <h3>8. Legislación aplicable</h3>
+
+        <p>
+          Este sitio se rige por la normativa española y europea que
+          resulte aplicable. La información de esta sección describe
+          el funcionamiento previsto del portfolio y deberá actualizarse
+          si cambian sus características, finalidades o servicios.
         </p>
 
       </div>
@@ -1050,10 +1177,17 @@
 
   <footer>
     <div class="container footer-content">
-      <span>© 2026 Sandra Román Luque · Cuidar es transformar</span>
-      <span>Personas · Organizaciones · Transformación</span>
+      <p>© <span id="year"></span> Sandra Román Luque · Cuidar es transformar</p>
+      <p>
+        <a href="#privacidad">Privacidad y condiciones de uso</a>
+      </p>
     </div>
   </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 
 </body>
 </html>
