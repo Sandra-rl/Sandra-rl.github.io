@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Sandra Román Luque | Trabajo Social Organizacional</title>
-
-  <meta name="description" content="Sandra Román Luque. Trabajo Social Organizacional aplicado a Recursos Humanos, gestión del talento, formación, igualdad y transformación organizacional. Trabajo 100 % remoto y ámbito internacional.">
+  <meta name="description" content="Una perspectiva diferente sobre la gestión de personas. Trabajo Social Organizacional, Recursos Humanos, formación, igualdad y transformación de organizaciones.">
   <meta name="author" content="Sandra Román Luque">
   <meta name="theme-color" content="#304c3d">
 
@@ -34,7 +33,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 110px;
+      scroll-padding-top: 100px;
     }
 
     body {
@@ -62,7 +61,7 @@
     h1, h2, h3 {
       font-family: Georgia, "Times New Roman", serif;
       font-weight: 400;
-      line-height: 1.15;
+      line-height: 1.17;
     }
 
     h1 {
@@ -78,8 +77,8 @@
 
     h3 {
       color: var(--forest);
-      font-size: 1.5rem;
-      margin-bottom: 14px;
+      font-size: 1.45rem;
+      margin-bottom: 13px;
     }
 
     p {
@@ -92,15 +91,15 @@
 
     .eyebrow {
       color: var(--terracotta);
-      font-size: .74rem;
+      font-size: .73rem;
       font-weight: 700;
-      letter-spacing: 2.5px;
+      letter-spacing: 2.3px;
       text-transform: uppercase;
       margin-bottom: 20px;
     }
 
     .intro {
-      max-width: 760px;
+      max-width: 780px;
       color: var(--muted);
       font-size: 1.08rem;
     }
@@ -145,13 +144,12 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 15px;
+      gap: 16px;
     }
 
     nav a {
       color: var(--text);
-      font-size: .77rem;
-      transition: color .2s;
+      font-size: .78rem;
     }
 
     nav a:hover {
@@ -162,11 +160,11 @@
 
     .button {
       display: inline-block;
-      padding: 13px 23px;
+      padding: 14px 24px;
       background: var(--forest);
       border: 1px solid var(--forest);
       color: var(--white) !important;
-      font-size: .87rem;
+      font-size: .88rem;
       font-weight: 700;
       line-height: 1.5;
       text-align: center;
@@ -176,7 +174,6 @@
     .button:hover {
       background: var(--forest-dark);
       border-color: var(--forest-dark);
-      color: var(--white) !important;
     }
 
     .button.secondary {
@@ -198,14 +195,14 @@
     .hero-grid {
       display: grid;
       grid-template-columns: 1.2fr .8fr;
-      gap: 70px;
+      gap: 65px;
       align-items: center;
     }
 
     .hero h1 {
       color: var(--forest-dark);
       max-width: 760px;
-      margin-bottom: 28px;
+      margin-bottom: 25px;
     }
 
     .hero h1 em {
@@ -218,14 +215,14 @@
       color: var(--forest);
       font-family: Georgia, serif;
       font-size: 1.35rem;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
     }
 
     .hero-copy {
       max-width: 650px;
       color: var(--muted);
       font-size: 1.08rem;
-      margin-bottom: 30px;
+      margin-bottom: 28px;
     }
 
     .actions {
@@ -254,7 +251,7 @@
       font-family: Georgia, serif;
     }
 
-    /* SOBRE MÍ */
+    /* INTRODUCCIÓN */
 
     .about {
       background: var(--paper);
@@ -263,7 +260,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1.1fr .9fr;
-      gap: 75px;
+      gap: 65px;
       align-items: start;
     }
 
@@ -286,43 +283,39 @@
     }
 
     .education {
-      margin-top: 27px;
-      padding-top: 24px;
+      margin-top: 25px;
+      padding-top: 23px;
       border-top: 1px solid rgba(255,255,255,.3);
     }
 
     .education ul {
       padding-left: 19px;
       color: #e4e9e2;
-      font-size: .91rem;
+      font-size: .9rem;
     }
 
     .education li {
-      margin-bottom: 11px;
-    }
-
-    /* PRINCIPIOS */
-
-    .principles {
-      padding: 65px 0;
-      background: var(--sage);
-    }
-
-    .principles-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 35px;
-    }
-
-    .principle h3 {
-      font-size: 1.4rem;
       margin-bottom: 9px;
     }
 
-    .principle p {
+    /* IDEA CENTRAL */
+
+    .manifesto {
+      padding: 75px 0;
+      background: var(--sage);
+    }
+
+    .manifesto-content {
+      max-width: 900px;
+    }
+
+    .manifesto h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .manifesto p {
       color: var(--forest-dark);
-      font-size: .93rem;
-      margin: 0;
+      font-size: 1.04rem;
     }
 
     /* TRABAJO SOCIAL ORGANIZACIONAL */
@@ -343,21 +336,21 @@
       line-height: 1.5;
     }
 
-    .social-work-highlight {
+    .social-highlight {
       margin: 45px 0;
       padding: 42px 48px;
       background: var(--forest);
       color: var(--white);
     }
 
-    .social-work-highlight span {
+    .social-highlight span {
       color: var(--sage);
       font-size: .72rem;
       font-weight: 700;
       letter-spacing: 2px;
     }
 
-    .social-work-highlight p {
+    .social-highlight p {
       max-width: 900px;
       margin: 15px 0 0;
       font-family: Georgia, serif;
@@ -365,170 +358,178 @@
       line-height: 1.45;
     }
 
-    .social-work-grid {
+    .social-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
-    .social-work-card {
+    .social-card {
       padding: 30px;
       background: var(--cream);
       border-top: 3px solid var(--sage);
     }
 
-    .social-work-card span {
+    .social-card span {
       color: var(--terracotta);
       font-family: Georgia, serif;
       font-size: 1.5rem;
     }
 
-    .social-work-card h3 {
-      margin-top: 17px;
-      font-size: 1.35rem;
+    .social-card h3 {
+      margin-top: 16px;
+      font-size: 1.3rem;
     }
 
-    .social-work-card p {
+    .social-card p {
       color: var(--muted);
       font-size: .91rem;
       margin-bottom: 0;
     }
 
-    .social-work-conclusion {
+    .social-conclusion {
       max-width: 850px;
-      margin-top: 55px;
+      margin-top: 50px;
     }
 
-    .social-work-conclusion h3 {
-      font-size: 1.8rem;
-    }
-
-    .social-work-conclusion p {
+    .social-conclusion p {
       color: var(--muted);
     }
 
-    .social-signature {
-      color: var(--forest) !important;
-      font-weight: 700;
-      letter-spacing: .4px;
-      margin-top: 25px;
-    }
+    /* RETOS */
 
-    /* ÁREAS PROFESIONALES */
-
-    .areas {
+    .challenges {
       background: var(--cream);
     }
 
-    .area-grid {
+    .challenge-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      gap: 18px;
+      margin-top: 42px;
+    }
+
+    .challenge-card {
+      padding: 30px;
+      background: var(--paper);
+      border-left: 3px solid var(--sage);
+    }
+
+    .challenge-card h3 {
+      font-size: 1.3rem;
+    }
+
+    .challenge-card p {
+      color: var(--muted);
+      font-size: .93rem;
+      margin-bottom: 0;
+    }
+
+    /* CÓMO PUEDO CONTRIBUIR */
+
+    .contribution {
+      background: var(--forest);
+      color: var(--white);
+    }
+
+    .contribution h2 {
+      color: var(--white);
+    }
+
+    .contribution .eyebrow {
+      color: var(--sage);
+    }
+
+    .contribution .intro {
+      color: #e0e7df;
+    }
+
+    .contribution-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px 50px;
       margin-top: 45px;
     }
 
-    .area-card {
-      padding: 36px;
-      background: var(--paper);
-      border-top: 3px solid var(--sage);
+    .contribution-item {
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,.35);
     }
 
-    .number {
-      color: var(--terracotta);
-      font-family: Georgia, serif;
-      font-size: 1.6rem;
-      margin-bottom: 18px;
+    .contribution-item h3 {
+      color: var(--white);
+      font-size: 1.3rem;
     }
 
-    .area-card p {
-      color: var(--muted);
-      font-size: .94rem;
-    }
-
-    .area-card ul {
-      padding-left: 19px;
-      font-size: .91rem;
-    }
-
-    .area-card li {
-      margin-bottom: 8px;
+    .contribution-item p {
+      color: #e0e7df;
+      font-size: .93rem;
     }
 
     /* METODOLOGÍA */
 
     .method {
-      background: var(--forest);
-      color: var(--white);
-    }
-
-    .method h2 {
-      color: var(--white);
-    }
-
-    .method .eyebrow {
-      color: var(--sage);
-    }
-
-    .method .intro {
-      color: #e0e7df;
+      background: var(--paper);
     }
 
     .steps {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 24px;
-      margin-top: 55px;
+      gap: 23px;
+      margin-top: 45px;
     }
 
     .step {
       padding-top: 20px;
-      border-top: 1px solid var(--sage);
+      border-top: 2px solid var(--sage);
     }
 
     .step strong {
       display: block;
-      color: var(--sage);
+      color: var(--terracotta);
       font-family: Georgia, serif;
-      font-size: 1.65rem;
+      font-size: 1.6rem;
       margin-bottom: 12px;
     }
 
     .step h3 {
-      color: var(--white);
       font-size: 1.2rem;
     }
 
     .step p {
-      color: #e0e7df;
+      color: var(--muted);
       font-size: .86rem;
     }
 
-    /* PERFIL */
+    /* RESPALDO PROFESIONAL */
 
-    .profile {
+    .background {
+      background: var(--cream);
+    }
+
+    .background-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+    }
+
+    .background-block {
+      padding: 30px;
       background: var(--paper);
     }
 
-    .profile-grid {
-      display: grid;
-      grid-template-columns: .85fr 1.15fr;
-      gap: 65px;
-    }
-
-    .profile-box {
-      margin-bottom: 27px;
-      padding: 4px 0 4px 25px;
-      border-left: 2px solid var(--terracotta);
-    }
-
-    .profile-box h3 {
-      font-size: 1.35rem;
-    }
-
-    .profile-box p {
+    .background-block p,
+    .background-block li {
       color: var(--muted);
-      font-size: .94rem;
-      margin: 0;
+      font-size: .93rem;
+    }
+
+    .background-block ul {
+      padding-left: 20px;
+    }
+
+    .background-block li {
+      margin-bottom: 9px;
     }
 
     /* PORTFOLIO */
@@ -541,11 +542,11 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      margin-top: 42px;
+      margin-top: 40px;
     }
 
     .portfolio-card {
-      padding: 32px;
+      padding: 30px;
       background: var(--paper);
       border: 1px solid var(--line);
     }
@@ -570,7 +571,7 @@
     }
 
     .note {
-      margin-top: 25px;
+      margin-top: 23px;
       color: var(--muted);
       font-size: .84rem;
     }
@@ -585,26 +586,30 @@
       max-width: 850px;
     }
 
-    .newsletter .social-lead {
-      margin-bottom: 20px;
+    .newsletter-panel {
+      margin-top: 30px;
+      padding: 35px;
+      background: var(--cream);
+      border-left: 3px solid var(--terracotta);
     }
 
-    .newsletter .button {
-      margin-top: 15px;
+    .newsletter-panel h3 {
+      font-family: Georgia, serif;
+      font-size: 1.8rem;
     }
 
-    /* PROYECCIÓN INTERNACIONAL */
+    .newsletter-panel p {
+      color: var(--muted);
+    }
 
-    .opportunities {
+    /* TRABAJO REMOTO */
+
+    .remote {
       background: var(--sage);
     }
 
-    .opportunities-content {
+    .remote-content {
       max-width: 900px;
-    }
-
-    .opportunities h2 {
-      max-width: 820px;
     }
 
     .remote-label {
@@ -613,23 +618,10 @@
       padding: 9px 16px;
       color: var(--forest-dark);
       border: 1px solid rgba(48,76,61,.45);
-      font-size: .82rem;
+      font-size: .8rem;
       font-weight: 700;
       letter-spacing: 1px;
       text-transform: uppercase;
-    }
-
-    .opportunity-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0 35px;
-      margin: 22px 0 28px;
-    }
-
-    .opportunity-list div {
-      padding: 13px 0;
-      color: var(--forest-dark);
-      border-bottom: 1px solid rgba(48,76,61,.3);
     }
 
     /* CONTACTO */
@@ -640,7 +632,7 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr .8fr;
       gap: 60px;
       align-items: center;
     }
@@ -659,28 +651,23 @@
 
     .contact-card .button {
       display: inline-block;
-      min-width: 210px;
-      padding: 14px 24px;
+      min-width: 200px;
       color: #ffffff !important;
       background: #304c3d !important;
       border: 1px solid #304c3d;
-      font-size: .9rem;
+      padding: 14px 24px;
       font-weight: 700;
-      line-height: 1.5;
       text-align: center;
-      opacity: 1;
-      visibility: visible;
     }
 
     .contact-card .button:hover {
-      color: #ffffff !important;
       background: #22372c !important;
     }
 
     /* PRIVACIDAD */
 
     .legal {
-      padding: 70px 0;
+      padding: 65px 0;
       background: #e9e8df;
     }
 
@@ -689,7 +676,7 @@
     }
 
     .legal h3 {
-      margin: 27px 0 9px;
+      margin: 25px 0 9px;
       font-family: Arial, sans-serif;
       font-size: 1rem;
       font-weight: 700;
@@ -697,7 +684,7 @@
 
     .legal p {
       color: #59635b;
-      font-size: .86rem;
+      font-size: .85rem;
     }
 
     .legal a {
@@ -705,10 +692,10 @@
       overflow-wrap: anywhere;
     }
 
-    /* PIE DE PÁGINA */
+    /* PIE */
 
     footer {
-      padding: 28px 0;
+      padding: 27px 0;
       background: var(--forest-dark);
       color: var(--white);
       font-size: .82rem;
@@ -725,12 +712,12 @@
       color: var(--sage);
     }
 
-    /* RESPONSIVE */
+    /* MÓVIL */
 
     @media(max-width: 900px) {
       .hero-grid,
       .about-grid,
-      .profile-grid,
+      .background-grid,
       .contact-grid {
         grid-template-columns: 1fr;
       }
@@ -740,16 +727,11 @@
         max-width: 440px;
       }
 
-      .steps {
+      .social-grid {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      .principles-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-      }
-
-      .social-work-grid {
+      .steps {
         grid-template-columns: repeat(2, 1fr);
       }
     }
@@ -770,34 +752,35 @@
       }
 
       nav {
-        gap: 12px 16px;
+        gap: 11px 14px;
       }
 
       nav a {
-        font-size: .75rem;
+        font-size: .74rem;
       }
 
-      .area-grid,
+      .social-grid,
+      .challenge-grid,
+      .contribution-grid,
       .portfolio-grid,
-      .opportunity-list,
-      .steps,
-      .social-work-grid {
+      .steps {
         grid-template-columns: 1fr;
       }
 
-      .area-card,
-      .portfolio-card,
-      .about-panel,
-      .contact-card {
-        padding: 25px;
-      }
-
-      .social-work-highlight {
+      .social-highlight {
         padding: 28px;
       }
 
-      .social-work-highlight p {
+      .social-highlight p {
         font-size: 1.35rem;
+      }
+
+      .about-panel,
+      .background-block,
+      .portfolio-card,
+      .contact-card,
+      .newsletter-panel {
+        padding: 25px;
       }
 
       .footer-inner {
@@ -818,15 +801,13 @@
     </a>
 
     <nav aria-label="Navegación principal">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#trabajo-social-organizacional">Trabajo Social y RR. HH.</a>
-      <a href="#areas">Áreas</a>
-      <a href="#metodologia">Metodología</a>
-      <a href="#perfil">Perfil</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#sobre-mi">Mi mirada</a>
+      <a href="#trabajo-social">Mi enfoque</a>
+      <a href="#retos">Retos</a>
+      <a href="#contribucion">Cómo puedo aportar</a>
+      <a href="#ideas">Ideas</a>
       <a href="#newsletter">Newsletter</a>
-      <a href="#proyeccion">Proyección</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Hablemos</a>
     </nav>
 
   </div>
@@ -842,40 +823,38 @@
       <div>
 
         <p class="eyebrow">
-          Trabajo Social Organizacional · Personas · Transformación
+          Trabajo Social · Recursos Humanos · Organizaciones
         </p>
 
         <h1>
-          Las organizaciones se transforman cuando
-          <em>ponen a las personas en el centro.</em>
+          ¿Y si el mayor potencial de una organización estuviera en
+          <em>comprender mejor a las personas?</em>
         </h1>
 
         <span class="hero-subtitle">
-          Trabajo Social aplicado a Recursos Humanos.
+          Una mirada diferente a la gestión de personas.
         </span>
 
         <p class="hero-copy">
-          Profesional multidisciplinar especializada en personas,
-          formación y transformación organizacional. Integro la
-          perspectiva social, la gestión del talento y la igualdad
-          para contribuir al desarrollo de organizaciones más humanas,
-          inclusivas y sostenibles.
+          Creo en una forma de entender las organizaciones que va más
+          allá de los procesos y los resultados. Una perspectiva que
+          incorpora la dimensión social, las relaciones, el bienestar
+          y las oportunidades de desarrollo de quienes las hacen posibles.
         </p>
 
         <div class="actions">
-          <a class="button" href="#trabajo-social-organizacional">
-            Mi enfoque diferencial
+          <a class="button" href="#trabajo-social">
+            Descubre mi enfoque
           </a>
 
           <a class="button secondary" href="#contacto">
-            Contacto profesional
+            Hablemos
           </a>
         </div>
 
       </div>
 
       <div class="portrait">
-
         <img
           src="imagenes/sandra-rom%C3%A1n-luque-web.jpg"
           alt="Fotografía profesional de Sandra Román Luque"
@@ -884,72 +863,69 @@
         <div class="portrait-caption">
           Sandra Román Luque · Trabajo Social Organizacional
         </div>
-
       </div>
 
     </div>
   </section>
 
-  <!-- SOBRE MÍ -->
+  <!-- MI MIRADA -->
 
   <section class="section about" id="sobre-mi">
     <div class="container about-grid">
 
       <div class="about-text">
 
-        <p class="eyebrow">Sobre mí</p>
+        <p class="eyebrow">Mi mirada profesional</p>
 
         <h2>
-          Una mirada social para comprender y transformar las organizaciones.
+          Las personas no son un recurso más. Son parte esencial de cada organización.
         </h2>
 
         <p>
-          Mi trayectoria académica y profesional se sitúa en la
-          intersección entre la intervención social, la educación,
-          la igualdad y la gestión de personas.
+          Me interesa especialmente lo que sucede entre las personas
+          y las organizaciones: cómo se relacionan, cómo se comunican,
+          qué oportunidades encuentran y qué barreras pueden limitar
+          su desarrollo.
         </p>
 
         <p>
-          Entiendo las organizaciones como espacios de relaciones,
-          aprendizaje y desarrollo. Por eso, considero que los resultados
-          sostenibles requieren prestar atención tanto a los objetivos
-          como a las personas que los hacen posibles.
+          Mi trayectoria en los ámbitos social, educativo, formativo
+          y organizativo me ha llevado a conectar dos mundos que
+          considero complementarios: el Trabajo Social y los Recursos
+          Humanos.
         </p>
 
         <p>
-          Mi enfoque combina análisis, planificación, comunicación
-          y diseño de respuestas adaptadas a las necesidades de cada
-          contexto organizativo.
+          Desde esa combinación, me gusta analizar los retos con una
+          mirada amplia, identificar necesidades y pensar respuestas
+          que tengan en cuenta tanto los objetivos de las organizaciones
+          como las experiencias de las personas.
         </p>
 
         <p>
-          Me interesan especialmente la selección de personas,
-          la formación corporativa, el desarrollo de equipos,
-          la igualdad y la prevención de situaciones de discriminación
-          y acoso.
+          No entiendo la transformación organizacional sin escucha,
+          participación, igualdad y responsabilidad.
         </p>
 
       </div>
 
       <aside class="about-panel">
 
-        <h3>El cuidado también es una decisión organizativa.</h3>
+        <h3>Una convicción que guía mi trabajo.</h3>
 
         <p>
-          Cuidar no es únicamente una declaración de intenciones.
-          Es una manera de organizar, liderar, formar, comunicar
-          y tomar decisiones.
+          Una organización puede tener buenos procesos, tecnología
+          y objetivos ambiciosos. Pero su capacidad de avanzar también
+          depende de cómo comprende, integra y desarrolla a las personas.
         </p>
 
         <p>
-          Significa construir entornos donde las personas puedan
-          desarrollarse, participar y trabajar con dignidad.
+          Por eso me interesa contribuir a una gestión de personas
+          más consciente, preventiva y conectada con la realidad.
         </p>
 
         <div class="education">
-
-          <h3>Formación académica</h3>
-
+          <h3>Mi formación</h3>
           <ul>
             <li>Grado en Trabajo Social.</li>
             <li>Técnica Superior en Integración Social.</li>
@@ -957,7 +933,6 @@
             <li>Magisterio – Educación Primaria.</li>
             <li>Máster Universitario de Profesorado de Educación Secundaria.</li>
           </ul>
-
         </div>
 
       </aside>
@@ -965,263 +940,291 @@
     </div>
   </section>
 
-  <!-- PRINCIPIOS -->
+  <!-- MANIFIESTO -->
 
-  <section class="principles">
-    <div class="container principles-grid">
+  <section class="manifesto">
+    <div class="container manifesto-content">
 
-      <div class="principle">
-        <h3>Perspectiva social</h3>
-        <p>
-          Comprender a las personas y sus circunstancias para tomar
-          mejores decisiones.
-        </p>
-      </div>
+      <p class="eyebrow">Una idea para empezar</p>
 
-      <div class="principle">
-        <h3>Rigor profesional</h3>
-        <p>
-          Trabajar con criterio, planificación, responsabilidad
-          y evaluación.
-        </p>
-      </div>
+      <h2>
+        Gestionar personas también significa comprender contextos,
+        relaciones y necesidades.
+      </h2>
 
-      <div class="principle">
-        <h3>Transformación real</h3>
-        <p>
-          Convertir los principios de igualdad y cuidado en prácticas
-          organizativas.
-        </p>
-      </div>
+      <p>
+        Cuando una organización escucha de verdad, puede detectar
+        problemas antes de que se conviertan en conflictos, reconocer
+        capacidades que pasan desapercibidas y crear condiciones
+        para que las personas participen y se desarrollen.
+      </p>
 
     </div>
   </section>
 
   <!-- TRABAJO SOCIAL ORGANIZACIONAL -->
 
-  <section class="section social-work" id="trabajo-social-organizacional">
+  <section class="section social-work" id="trabajo-social">
+
     <div class="container">
 
       <div class="social-work-intro">
 
-        <p class="eyebrow">Una mirada diferencial</p>
+        <p class="eyebrow">Mi enfoque diferencial</p>
 
-        <h2>
-          ¿Y si llevamos el Trabajo Social al corazón de las organizaciones?
-        </h2>
+        <h2>Trabajo Social Organizacional: otra forma de mirar los Recursos Humanos.</h2>
 
         <p class="social-lead">
-          La gestión de personas necesita algo más que procesos de selección,
-          evaluación del desempeño y desarrollo de competencias. Necesita
-          comprender a las personas, sus relaciones y los contextos en los
-          que trabajan.
+          ¿Qué puede aportar el Trabajo Social a una organización
+          que quiere cuidar mejor a las personas y, al mismo tiempo,
+          alcanzar sus objetivos?
         </p>
 
         <p>
-          El Trabajo Social aporta a los Recursos Humanos una perspectiva
-          integral, relacional y preventiva. Su metodología permite analizar
-          necesidades, identificar barreras, acompañar situaciones complejas
-          y promover entornos laborales más inclusivos y saludables.
+          Puede aportar una perspectiva integral, relacional y preventiva.
+          Una forma de analizar las necesidades, comprender las dinámicas
+          de los equipos, identificar barreras y conectar las decisiones
+          organizativas con su impacto en las personas.
         </p>
 
         <p>
-          No se trata de trasladar la intervención social al entorno
-          empresarial sin más, sino de incorporar sus conocimientos,
-          herramientas y principios a la estrategia de gestión de personas.
+          Mi propuesta consiste en incorporar conocimientos, herramientas
+          y principios del Trabajo Social a los procesos de gestión de
+          personas. No como una fórmula cerrada, sino como una perspectiva
+          que puede enriquecer distintas áreas de Recursos Humanos.
         </p>
 
       </div>
 
-      <div class="social-work-highlight">
-        <span>UNA NUEVA PERSPECTIVA</span>
+      <div class="social-highlight">
+        <span>CAMBIAR LA PREGUNTA</span>
 
         <p>
-          Pasar de gestionar únicamente puestos y competencias a comprender
-          también a las personas, sus relaciones y las condiciones que
-          hacen posible su desarrollo.
+          No preguntarnos solamente qué necesita la organización
+          de las personas, sino también qué necesitan las personas
+          para desarrollarse dentro de ella.
         </p>
       </div>
 
-      <div class="social-work-grid">
+      <div class="social-grid">
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>01</span>
-          <h3>Diagnóstico organizacional</h3>
+          <h3>Comprender antes de intervenir</h3>
           <p>
-            Identificar necesidades, factores de riesgo, barreras y
-            dinámicas que influyen en el bienestar y el funcionamiento
-            de los equipos.
+            Analizar necesidades, factores de riesgo, barreras y
+            dinámicas que influyen en el funcionamiento de los equipos.
           </p>
         </article>
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>02</span>
-          <h3>Prevención y bienestar laboral</h3>
+          <h3>Prevenir en lugar de reaccionar</h3>
           <p>
-            Detectar situaciones que pueden afectar a las personas y
-            contribuir al desarrollo de entornos de trabajo saludables,
-            seguros y respetuosos.
+            Identificar situaciones que pueden afectar al bienestar,
+            la convivencia y las relaciones profesionales.
           </p>
         </article>
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>03</span>
-          <h3>Mediación y relaciones</h3>
+          <h3>Dar valor a las relaciones</h3>
           <p>
-            Aplicar herramientas de comunicación, escucha activa y gestión
-            de conflictos para mejorar las relaciones profesionales.
+            Incorporar escucha activa, comunicación y herramientas
+            de gestión de conflictos en los entornos laborales.
           </p>
         </article>
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>04</span>
-          <h3>Diversidad e inclusión</h3>
+          <h3>Eliminar barreras</h3>
           <p>
-            Identificar desigualdades y barreras, impulsar la igualdad
-            de oportunidades y favorecer la participación de todas
-            las personas.
+            Detectar desigualdades y obstáculos que dificultan
+            la participación, la inclusión y el desarrollo profesional.
           </p>
         </article>
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>05</span>
-          <h3>Acompañamiento y desarrollo</h3>
+          <h3>Desarrollar a las personas</h3>
           <p>
-            Comprender las circunstancias que influyen en la trayectoria
-            profesional y favorecer procesos de adaptación, participación
-            y crecimiento.
+            Comprender las circunstancias que influyen en las
+            trayectorias profesionales y favorecer oportunidades
+            de aprendizaje y crecimiento.
           </p>
         </article>
 
-        <article class="social-work-card">
+        <article class="social-card">
           <span>06</span>
-          <h3>Cultura y responsabilidad social</h3>
+          <h3>Transformar la cultura</h3>
           <p>
-            Conectar las políticas de personas con la responsabilidad
-            social, la sostenibilidad y el compromiso de las organizaciones.
+            Conectar las políticas de personas con la igualdad,
+            la responsabilidad social y la sostenibilidad organizativa.
           </p>
         </article>
 
       </div>
 
-      <div class="social-work-conclusion">
-
-        <h3>El valor de mirar más allá del puesto de trabajo.</h3>
+      <div class="social-conclusion">
+        <h3>La dimensión humana también es estrategia.</h3>
 
         <p>
-          Cuando una organización comprende mejor a las personas que la
-          forman, también puede tomar mejores decisiones sobre talento,
-          liderazgo, convivencia, inclusión y desarrollo.
+          Creo que incorporar esta mirada puede ayudar a construir
+          organizaciones que comprendan mejor sus propios retos
+          y tomen decisiones más coherentes con las personas que
+          forman parte de ellas.
         </p>
+      </div>
 
-        <p class="social-signature">
-          Trabajo Social + Recursos Humanos + Transformación organizacional
-        </p>
+    </div>
+  </section>
+
+  <!-- RETOS -->
+
+  <section class="section challenges" id="retos">
+
+    <div class="container">
+
+      <p class="eyebrow">Preguntas que me interesan</p>
+
+      <h2>¿Te reconoces en alguno de estos retos?</h2>
+
+      <p class="intro">
+        Son algunas de las cuestiones sobre las que me gusta reflexionar
+        y trabajar desde una perspectiva social y organizativa.
+      </p>
+
+      <div class="challenge-grid">
+
+        <article class="challenge-card">
+          <h3>¿Seleccionamos personas o solamente currículums?</h3>
+          <p>
+            Me interesa una selección que valore las competencias,
+            pero también las capacidades, las circunstancias y el
+            potencial de cada persona.
+          </p>
+        </article>
+
+        <article class="challenge-card">
+          <h3>¿La formación está cambiando algo?</h3>
+          <p>
+            Diseñar formación no consiste únicamente en transmitir
+            contenidos. Me interesa que el aprendizaje tenga sentido,
+            aplicación y continuidad.
+          </p>
+        </article>
+
+        <article class="challenge-card">
+          <h3>¿Estamos previniendo o llegando demasiado tarde?</h3>
+          <p>
+            La prevención del acoso, los conflictos y la discriminación
+            requiere cultura organizativa, conocimiento y compromiso.
+          </p>
+        </article>
+
+        <article class="challenge-card">
+          <h3>¿Todas las personas pueden participar en igualdad?</h3>
+          <p>
+            Me interesa identificar las barreras que pueden pasar
+            desapercibidas y que condicionan las oportunidades
+            dentro de una organización.
+          </p>
+        </article>
+
+        <article class="challenge-card">
+          <h3>¿Conocemos realmente las necesidades de los equipos?</h3>
+          <p>
+            Escuchar y analizar permite comprender mejor las dinámicas
+            de trabajo y detectar oportunidades de mejora.
+          </p>
+        </article>
+
+        <article class="challenge-card">
+          <h3>¿El bienestar forma parte de las decisiones?</h3>
+          <p>
+            Creo que el cuidado de las personas debe reflejarse
+            en la forma de organizar, comunicar y liderar.
+          </p>
+        </article>
 
       </div>
 
     </div>
   </section>
 
-  <!-- ÁREAS PROFESIONALES -->
+  <!-- CÓMO PUEDO CONTRIBUIR -->
 
-  <section class="section areas" id="areas">
+  <section class="section contribution" id="contribucion">
+
     <div class="container">
 
-      <p class="eyebrow">Ámbitos profesionales</p>
+      <p class="eyebrow">Mi aportación profesional</p>
 
-      <h2>Personas, talento y cultura organizacional.</h2>
+      <h2>¿En qué puedo contribuir?</h2>
 
       <p class="intro">
-        Una combinación de competencias sociales, educativas y
-        organizativas aplicada a los principales retos de la gestión
-        de personas.
+        Mi perfil combina conocimientos sociales, educativos y
+        organizativos. Esta combinación me permite abordar distintos
+        retos desde una perspectiva transversal.
       </p>
 
-      <div class="area-grid">
+      <div class="contribution-grid">
 
-        <article class="area-card">
-          <div class="number">01</div>
-          <h3>Selección y gestión del talento</h3>
+        <article class="contribution-item">
+          <h3>Selección y talento</h3>
           <p>
-            Identificación, evaluación y acompañamiento de personas
-            en los procesos de incorporación y desarrollo profesional.
+            Me interesa contribuir a procesos de selección más
+            conscientes, entrevistas por competencias, evaluación
+            de candidaturas y acompañamiento de incorporaciones.
           </p>
-          <ul>
-            <li>Cribado y preselección curricular.</li>
-            <li>Entrevistas por competencias.</li>
-            <li>Evaluación y adecuación de perfiles.</li>
-            <li>Informes de selección.</li>
-            <li>Orientación e intermediación sociolaboral.</li>
-          </ul>
         </article>
 
-        <article class="area-card">
-          <div class="number">02</div>
-          <h3>Formación corporativa y desarrollo</h3>
+        <article class="contribution-item">
+          <h3>Formación y aprendizaje</h3>
           <p>
-            Diseño de experiencias de aprendizaje conectadas con
-            las necesidades reales de las organizaciones.
+            Puedo aportar en el diseño de programas formativos,
+            materiales didácticos, experiencias e-learning y
+            desarrollo de competencias profesionales.
           </p>
-          <ul>
-            <li>Diseño y planificación de acciones formativas.</li>
-            <li>Formación presencial y online.</li>
-            <li>Materiales didácticos y recursos e-learning.</li>
-            <li>Desarrollo de competencias profesionales.</li>
-            <li>Formación para equipos y liderazgo.</li>
-            <li>Evaluación del aprendizaje.</li>
-          </ul>
         </article>
 
-        <article class="area-card">
-          <div class="number">03</div>
-          <h3>Igualdad, diversidad y prevención del acoso</h3>
+        <article class="contribution-item">
+          <h3>Igualdad y prevención</h3>
           <p>
-            Promoción de entornos de trabajo seguros, respetuosos,
-            inclusivos y libres de discriminación.
+            Me interesa trabajar en iniciativas de igualdad,
+            diversidad, inclusión, sensibilización y prevención
+            del acoso en el entorno laboral.
           </p>
-          <ul>
-            <li>Formación en igualdad y diversidad.</li>
-            <li>Prevención del acoso laboral y sexual.</li>
-            <li>Sensibilización y cultura preventiva.</li>
-            <li>Apoyo técnico y documental en protocolos.</li>
-            <li>Inclusión y diversidad en el empleo.</li>
-          </ul>
         </article>
 
-        <article class="area-card">
-          <div class="number">04</div>
-          <h3>Personas y organizaciones</h3>
+        <article class="contribution-item">
+          <h3>Personas y organización</h3>
           <p>
-            Comprensión de las dinámicas organizativas y desarrollo
-            de entornos de trabajo saludables y participativos.
+            Puedo contribuir al análisis de necesidades, la
+            coordinación de proyectos, el desarrollo de equipos
+            y la mejora de las relaciones profesionales.
           </p>
-          <ul>
-            <li>Análisis de necesidades organizativas.</li>
-            <li>Desarrollo y acompañamiento de equipos.</li>
-            <li>Bienestar y cuidado en el entorno laboral.</li>
-            <li>Gestión de personas y procesos.</li>
-            <li>Diseño y seguimiento de proyectos.</li>
-          </ul>
         </article>
 
       </div>
+
     </div>
   </section>
 
   <!-- METODOLOGÍA -->
 
   <section class="section method" id="metodologia">
+
     <div class="container">
 
-      <p class="eyebrow">Metodología</p>
+      <p class="eyebrow">Cómo entiendo el trabajo</p>
 
-      <h2>Comprender antes de transformar.</h2>
+      <h2>Escuchar, comprender y construir respuestas.</h2>
 
       <p class="intro">
-        Cada organización tiene una realidad propia. Cualquier proceso
-        de mejora debe partir de la escucha, el análisis y la comprensión
-        de su contexto.
+        No creo en aplicar soluciones idénticas a realidades diferentes.
+        Me gusta partir de la escucha y del análisis para plantear
+        respuestas ajustadas a cada contexto.
       </p>
 
       <div class="steps">
@@ -1230,7 +1233,7 @@
           <strong>01</strong>
           <h3>Escuchar</h3>
           <p>
-            Conocer a las personas, sus necesidades y sus experiencias.
+            Conocer a las personas, sus necesidades y experiencias.
           </p>
         </div>
 
@@ -1238,7 +1241,7 @@
           <strong>02</strong>
           <h3>Analizar</h3>
           <p>
-            Comprender el contexto, detectar necesidades y definir prioridades.
+            Comprender el contexto y detectar necesidades y prioridades.
           </p>
         </div>
 
@@ -1246,7 +1249,7 @@
           <strong>03</strong>
           <h3>Diseñar</h3>
           <p>
-            Plantear respuestas realistas, adaptadas y orientadas a objetivos.
+            Pensar respuestas realistas y adaptadas a los objetivos.
           </p>
         </div>
 
@@ -1254,7 +1257,7 @@
           <strong>04</strong>
           <h3>Desarrollar</h3>
           <p>
-            Impulsar acciones formativas y organizativas con sentido práctico.
+            Convertir las propuestas en acciones y aprendizajes.
           </p>
         </div>
 
@@ -1262,87 +1265,80 @@
           <strong>05</strong>
           <h3>Evaluar</h3>
           <p>
-            Revisar resultados, identificar mejoras y favorecer la continuidad.
+            Revisar resultados y detectar oportunidades de mejora.
           </p>
         </div>
 
       </div>
+
     </div>
   </section>
 
-  <!-- PERFIL PROFESIONAL -->
+  <!-- EXPERIENCIA Y FORMACIÓN COMO RESPALDO -->
 
-  <section class="section profile" id="perfil">
-    <div class="container profile-grid">
+  <section class="section background" id="trayectoria">
 
-      <div>
+    <div class="container">
 
-        <p class="eyebrow">Perfil profesional</p>
+      <p class="eyebrow">De dónde nace esta perspectiva</p>
 
-        <h2>
-          Competencias que conectan personas y organizaciones.
-        </h2>
+      <h2>Una mirada construida desde distintos ámbitos.</h2>
 
-        <p class="intro">
-          Mi perfil combina formación interdisciplinar y experiencia
-          en ámbitos sociales, educativos, formativos y organizativos.
-          Esta combinación me permite aportar una perspectiva transversal
-          a equipos y proyectos.
-        </p>
+      <p class="intro">
+        Mi enfoque no surge de una única disciplina. Se ha ido
+        construyendo a través de la formación y de experiencias
+        profesionales vinculadas a la intervención social,
+        la educación, la orientación y el desarrollo de proyectos.
+      </p>
 
-      </div>
+      <div class="background-grid">
 
-      <div>
-
-        <div class="profile-box">
-          <h3>Recursos Humanos y selección</h3>
+        <div class="background-block">
+          <h3>Formación interdisciplinar</h3>
           <p>
-            Evaluación de candidaturas, entrevistas, identificación
-            de competencias y acompañamiento de procesos de incorporación.
+            Mi formación conecta el Trabajo Social, la Integración
+            Social, la Igualdad de Género, la Educación Primaria
+            y la formación del profesorado.
+          </p>
+          <p>
+            Esta combinación me permite abordar las necesidades
+            desde una perspectiva educativa, social y organizativa.
           </p>
         </div>
 
-        <div class="profile-box">
-          <h3>Diseño y desarrollo formativo</h3>
+        <div class="background-block">
+          <h3>Experiencia y aprendizaje profesional</h3>
           <p>
-            Planificación didáctica, dinamización de grupos, elaboración
-            de materiales y evaluación de acciones de aprendizaje.
+            A lo largo de mi trayectoria he participado en proyectos
+            sociales, educativos, formativos y de orientación,
+            trabajando con personas, entidades y organizaciones.
           </p>
-        </div>
-
-        <div class="profile-box">
-          <h3>Igualdad y prevención</h3>
           <p>
-            Sensibilización, formación, diversidad, inclusión y apoyo
-            documental en iniciativas de prevención del acoso.
-          </p>
-        </div>
-
-        <div class="profile-box">
-          <h3>Coordinación y gestión de proyectos</h3>
-          <p>
-            Organización de actividades, interlocución con entidades,
-            análisis de necesidades y seguimiento de actuaciones.
+            Estas experiencias han reforzado mi interés por conectar
+            la intervención social con los retos actuales de la
+            gestión de personas.
           </p>
         </div>
 
       </div>
+
     </div>
   </section>
 
   <!-- PORTFOLIO -->
 
   <section class="section portfolio" id="portfolio">
+
     <div class="container">
 
-      <p class="eyebrow">Portfolio profesional</p>
+      <p class="eyebrow">Algunos ejemplos de trabajo</p>
 
-      <h2>Del conocimiento a la práctica.</h2>
+      <h2>Ideas que también se convierten en herramientas.</h2>
 
       <p class="intro">
-        Una selección de materiales y ejemplos que muestran mi forma
-        de estructurar contenidos, diseñar propuestas formativas y
-        abordar procesos vinculados a la gestión de personas.
+        Comparto algunos materiales que permiten conocer cómo
+        estructuro contenidos, organizo información y planteo
+        propuestas relacionadas con la gestión de personas.
       </p>
 
       <div class="portfolio-grid">
@@ -1350,9 +1346,8 @@
         <article class="portfolio-card">
           <h3>Competencias profesionales y ámbitos de contribución</h3>
           <p>
-            Presentación de las áreas de conocimiento, competencias
-            y posibles ámbitos de contribución profesional en equipos
-            de Recursos Humanos, formación y organizaciones.
+            Una presentación de mis conocimientos y de las áreas
+            en las que puedo aportar valor a proyectos y organizaciones.
           </p>
           <a class="doc-link"
              href="documentos/catalogo-servicios.pdf"
@@ -1362,9 +1357,9 @@
         </article>
 
         <article class="portfolio-card">
-          <h3>Prevención del acoso en el entorno laboral</h3>
+          <h3>Prevención del acoso laboral</h3>
           <p>
-            Índice orientativo para estructurar un protocolo de prevención
+            Ejemplo de estructura documental para abordar la prevención
             y actuación frente al acoso en el ámbito laboral.
           </p>
           <a class="doc-link"
@@ -1377,9 +1372,8 @@
         <article class="portfolio-card">
           <h3>Diseño de una acción formativa</h3>
           <p>
-            Ejemplo de planificación didáctica sobre prevención del acoso
-            laboral: objetivos, contenidos, metodología, actividades
-            y evaluación.
+            Ejemplo de planificación didáctica con objetivos,
+            contenidos, metodología, actividades y evaluación.
           </p>
           <a class="doc-link"
              href="documentos/programa-formativo-acoso.pdf"
@@ -1391,8 +1385,8 @@
         <article class="portfolio-card">
           <h3>Ejemplo de informe de selección</h3>
           <p>
-            Modelo ficticio de evaluación de candidaturas mediante
-            competencias, criterios ponderados y conclusiones.
+            Modelo ficticio para mostrar una posible estructura
+            de evaluación de candidaturas y análisis de competencias.
           </p>
           <a class="doc-link"
              href="documentos/ejemplo-informe-seleccion.pdf"
@@ -1404,21 +1398,21 @@
       </div>
 
       <p class="note">
-        Los ejemplos de selección utilizan datos ficticios. Los documentos
-        sobre prevención del acoso tienen carácter orientativo y requieren
-        adaptación al contexto de cada organización y revisión por los
-        profesionales competentes.
+        Los ejemplos de selección utilizan datos ficticios.
+        Los materiales tienen finalidad demostrativa y deben
+        adaptarse a las circunstancias de cada organización.
       </p>
 
     </div>
   </section>
 
-  <!-- NEWSLETTER -->
+  <!-- IDEAS Y NEWSLETTER -->
 
   <section class="section newsletter" id="newsletter">
+
     <div class="container newsletter-content">
 
-      <p class="eyebrow">Publicaciones y conocimiento</p>
+      <p class="eyebrow">Ideas que comparto</p>
 
       <h2>El conocimiento es poder.</h2>
 
@@ -1428,68 +1422,69 @@
       </p>
 
       <p class="intro">
-        En mi newsletter de LinkedIn publico reflexiones y artículos
-        sobre Trabajo Social Organizacional, Recursos Humanos,
-        igualdad, diversidad, formación, liderazgo y bienestar laboral.
+        En mi newsletter de LinkedIn escribo sobre Trabajo Social
+        Organizacional, Recursos Humanos, igualdad, diversidad,
+        formación, liderazgo y bienestar laboral.
       </p>
 
       <p>
-        Un espacio para compartir ideas, cuestionar prácticas
-        y explorar nuevas perspectivas sobre la gestión de personas
-        y el futuro de las organizaciones.
+        Me interesa abrir conversaciones, compartir reflexiones,
+        cuestionar prácticas habituales y explorar nuevas formas
+        de entender la gestión de personas.
       </p>
 
-      <a class="button"
-         href="https://www.linkedin.com/newsletters/el-conocimiento-es-poder-7353011386072948736/"
-         target="_blank"
-         rel="noopener noreferrer">
-        Leer y suscribirme a la newsletter
-      </a>
+      <div class="newsletter-panel">
+
+        <h3>El conocimiento es poder</h3>
+
+        <p>
+          Si te interesan estas cuestiones, puedes leer mis artículos
+          y suscribirte para recibir las próximas publicaciones.
+        </p>
+
+        <a class="button"
+           href="https://www.linkedin.com/newsletters/el-conocimiento-es-poder-7353011386072948736/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Leer mi newsletter en LinkedIn
+        </a>
+
+      </div>
 
     </div>
   </section>
 
-  <!-- PROYECCIÓN INTERNACIONAL Y REMOTO -->
+  <!-- MODALIDAD REMOTA -->
 
-  <section class="section opportunities" id="proyeccion">
-    <div class="container opportunities-content">
+  <section class="section remote" id="modalidad">
 
-      <p class="eyebrow">Proyección profesional</p>
+    <div class="container remote-content">
 
-      <h2>
-        Una perspectiva global para organizaciones en transformación.
-      </h2>
+      <p class="eyebrow">Ámbito de colaboración</p>
 
-      <p>
-        Mi perfil integra conocimientos de Trabajo Social, Recursos Humanos,
-        formación e igualdad para contribuir a proyectos y organizaciones
-        que sitúan a las personas en el centro de su estrategia.
-      </p>
+      <h2>Las ideas y el talento no entienden de fronteras.</h2>
 
       <div class="remote-label">
         Modalidad profesional · 100 % remoto · Ámbito internacional
       </div>
 
       <p>
-        Mi modalidad de trabajo es 100 % remota. Desarrollo la comunicación,
-        la coordinación y la participación en proyectos mediante entornos
-        digitales, colaborando con organizaciones y equipos
-        independientemente de su ubicación geográfica.
+        Mi modalidad de trabajo es siempre remota. Desarrollo la
+        comunicación, la coordinación, las reuniones y la participación
+        en proyectos mediante entornos digitales.
       </p>
 
-      <div class="opportunity-list">
-        <div>Trabajo Social Organizacional</div>
-        <div>Selección y gestión del talento</div>
-        <div>Formación y desarrollo profesional</div>
-        <div>Igualdad, diversidad e inclusión</div>
-        <div>Prevención del acoso laboral</div>
-        <div>Desarrollo de equipos y organizaciones</div>
-      </div>
+      <p>
+        Me interesa colaborar con organizaciones, entidades y equipos
+        de distintos países, independientemente de su ubicación
+        geográfica, mediante fórmulas de contratación o colaboración
+        legalmente adecuadas.
+      </p>
 
       <p>
-        Me interesa establecer relaciones profesionales de calidad
-        y participar en proyectos que compartan esta visión, mediante
-        fórmulas de contratación o colaboración legalmente adecuadas.
+        Creo que trabajar en remoto también permite conectar
+        perspectivas, experiencias y conocimientos que enriquecen
+        los proyectos.
       </p>
 
     </div>
@@ -1498,33 +1493,38 @@
   <!-- CONTACTO -->
 
   <section class="section contact" id="contacto">
+
     <div class="container contact-grid">
 
       <div>
 
-        <p class="eyebrow">Contacto</p>
+        <p class="eyebrow">Una conversación puede ser un buen comienzo</p>
 
-        <h2>
-          Las buenas transformaciones empiezan con una conversación.
-        </h2>
+        <h2>Quizá tengamos una conversación pendiente.</h2>
 
         <p>
-          Para conversar sobre proyectos, iniciativas organizativas
-          o posibles colaboraciones profesionales, puedes contactar
-          conmigo a través de los siguientes canales.
+          Cada organización tiene sus propios retos. Me interesa
+          conocerlos, intercambiar ideas y explorar cómo mi perspectiva
+          puede contribuir a nuevos proyectos.
         </p>
 
         <p>
-          Mi modalidad de trabajo es siempre remota. La comunicación,
-          la coordinación y las reuniones se realizan mediante
-          herramientas digitales.
+          No hace falta tener una propuesta cerrada para empezar
+          a conversar. A veces, una buena pregunta es el primer paso
+          para encontrar nuevas posibilidades.
         </p>
 
       </div>
 
       <div class="contact-card">
 
-        <h3>Conectemos</h3>
+        <h3>Hablemos</h3>
+
+        <p>
+          Si algo de lo que has leído conecta con un reto,
+          una idea o un proyecto que tienes entre manos,
+          estaré encantada de leerte.
+        </p>
 
         <a href="mailto:sandrarolu90@gmail.com?subject=Contacto%20profesional">
           sandrarolu90@gmail.com
@@ -1532,21 +1532,23 @@
 
         <a href="https://www.linkedin.com/in/sandraromanluque"
            target="_blank" rel="noopener noreferrer">
-          LinkedIn · Sandra Román Luque →
+          Mi perfil en LinkedIn →
         </a>
 
         <a class="button"
-           href="mailto:sandrarolu90@gmail.com?subject=Contacto%20profesional">
+           href="mailto:sandrarolu90@gmail.com?subject=Me%20gustaría%20conversar">
           Escribir un correo
         </a>
 
       </div>
+
     </div>
   </section>
 
   <!-- INFORMACIÓN LEGAL -->
 
   <section class="legal" id="privacidad">
+
     <div class="container">
 
       <p class="eyebrow">Información legal</p>
@@ -1555,10 +1557,10 @@
 
       <p>
         Este sitio web es un portfolio personal de carácter informativo
-        y profesional. Su finalidad es presentar la trayectoria, formación,
-        competencias y muestras de trabajo de Sandra Román Luque.
-        No constituye una tienda online ni permite contratar servicios
-        o realizar pagos a través de la página.
+        y profesional. Su finalidad es presentar la perspectiva,
+        formación, conocimientos y ejemplos de trabajo de Sandra
+        Román Luque. No constituye una tienda online ni permite
+        realizar pagos o contrataciones desde la propia página.
       </p>
 
       <h3>1. Responsable del sitio web</h3>
@@ -1566,77 +1568,58 @@
       <p>
         Responsable: Sandra Román Luque.<br>
         Correo electrónico:
-        <a href="mailto:sandrarolu90@gmail.com">
-          sandrarolu90@gmail.com
-        </a>.
+        <a href="mailto:sandrarolu90@gmail.com">sandrarolu90@gmail.com</a>.
       </p>
+
+      <h3>2. Finalidad</h3>
 
       <p>
-        El sitio está alojado mediante GitHub Pages. No se publica
-        domicilio particular ni teléfono de contacto.
+        La web tiene como finalidad presentar información profesional,
+        compartir publicaciones y facilitar el contacto.
       </p>
 
-      <h3>2. Finalidad del sitio</h3>
-
-      <p>
-        La finalidad es presentar el perfil profesional, la formación,
-        las áreas de conocimiento y ejemplos de trabajos. No se ofrecen
-        procesos de contratación, pagos, suscripciones ni venta de
-        productos o servicios desde esta web.
-      </p>
-
-      <h3>3. Protección de datos personales</h3>
+      <h3>3. Protección de datos</h3>
 
       <p>
         Este sitio no incorpora formularios propios de recogida de datos.
-        Si una persona contacta voluntariamente mediante correo electrónico,
-        los datos incluidos en su mensaje se utilizarán para atender la
-        consulta, responder a la comunicación o valorar la oportunidad
-        profesional planteada.
+        Si una persona contacta voluntariamente mediante correo
+        electrónico, los datos incluidos se utilizarán para atender
+        y responder a su comunicación.
       </p>
 
       <p>
         La base jurídica será, según el caso, la adopción de medidas
-        precontractuales solicitadas por la persona interesada o el interés
-        legítimo en gestionar y responder a comunicaciones profesionales.
-        Los datos se conservarán durante el tiempo necesario para atender
-        la comunicación y los plazos legales que pudieran resultar aplicables.
+        precontractuales solicitadas por la persona interesada o el
+        interés legítimo en gestionar comunicaciones profesionales.
+        Los datos se conservarán durante el tiempo necesario para
+        atender la consulta y los plazos legales aplicables.
       </p>
 
       <p>
-        Se pueden ejercer los derechos de acceso, rectificación, supresión,
-        oposición, limitación y, cuando proceda, portabilidad escribiendo a
-        <a href="mailto:sandrarolu90@gmail.com">
-          sandrarolu90@gmail.com
-        </a>.
+        Se pueden ejercer los derechos de acceso, rectificación,
+        supresión, oposición, limitación y, cuando proceda, portabilidad
+        escribiendo a
+        <a href="mailto:sandrarolu90@gmail.com">sandrarolu90@gmail.com</a>.
         También se puede reclamar ante la
-        <a href="https://www.aepd.es/"
-           target="_blank" rel="noopener noreferrer">
+        <a href="https://www.aepd.es/" target="_blank" rel="noopener noreferrer">
           Agencia Española de Protección de Datos
         </a>.
       </p>
 
-      <h3>4. Alojamiento, cookies y servicios de terceros</h3>
+      <h3>4. Alojamiento y servicios de terceros</h3>
 
       <p>
-        Esta página está alojada mediante GitHub Pages, servicio
-        proporcionado por GitHub, Inc. Durante la visita, GitHub puede
-        recoger información técnica de la conexión, incluida la dirección
-        IP, por motivos de seguridad y funcionamiento.
+        Esta página está alojada mediante GitHub Pages. GitHub puede
+        recoger información técnica de la conexión, incluida la
+        dirección IP, por motivos de seguridad y funcionamiento.
       </p>
 
       <p>
-        El código de esta web no incorpora herramientas propias de
-        analítica, publicidad comportamental, seguimiento comercial
-        ni formularios de recogida de datos.
-      </p>
-
-      <p>
-        GitHub puede utilizar cookies y tecnologías similares en sus
-        servicios. Su utilización concreta en este sitio depende de la
+        El código de esta web no incorpora herramientas propias
+        de analítica, publicidad comportamental ni formularios.
+        GitHub puede utilizar cookies y tecnologías similares
+        en sus servicios. La utilización concreta depende de la
         configuración del alojamiento y de los recursos cargados.
-        No se afirma que la página esté libre de todas las cookies
-        o tecnologías de terceros.
       </p>
 
       <p>
@@ -1653,28 +1636,25 @@
       </p>
 
       <p>
-        Esta web contiene enlaces externos a Gmail y LinkedIn. Al acceder
-        a esas plataformas, se aplican sus propias condiciones y políticas
-        de privacidad.
+        Los enlaces a Gmail y LinkedIn dirigen a plataformas externas,
+        sujetas a sus propias condiciones y políticas de privacidad.
       </p>
 
       <h3>5. Propiedad intelectual</h3>
 
       <p>
-        Los textos, materiales y documentos originales publicados en
-        este portfolio pertenecen a su autora, salvo que se indique
-        expresamente otra procedencia. Su reproducción o utilización
-        requiere respetar los derechos de propiedad intelectual aplicables.
+        Los textos, materiales y documentos originales publicados
+        pertenecen a su autora, salvo que se indique otra procedencia.
+        Su reproducción requiere respetar los derechos de propiedad
+        intelectual aplicables.
       </p>
 
       <h3>6. Documentos y ejemplos</h3>
 
       <p>
-        Los documentos incluidos tienen finalidad demostrativa e informativa.
-        Los ejemplos ficticios no representan casos reales ni contienen
-        datos personales de candidaturas. Los materiales sobre prevención
-        del acoso requieren adaptación al contexto de cada organización
-        y revisión por profesionales competentes.
+        Los documentos incluidos tienen finalidad demostrativa
+        e informativa. Los ejemplos ficticios no representan casos
+        reales ni contienen datos personales de candidaturas.
       </p>
 
       <h3>7. Enlaces externos</h3>
@@ -1682,15 +1662,16 @@
       <p>
         Los enlaces a páginas de terceros se facilitan para ampliar
         información o facilitar el contacto. La titular no controla
-        sus contenidos, disponibilidad o políticas de privacidad.
+        sus contenidos, disponibilidad o políticas.
       </p>
 
       <h3>8. Legislación aplicable</h3>
 
       <p>
-        Este sitio se rige por la normativa española y europea que
-        resulte aplicable. Esta información deberá actualizarse si
-        cambian las características, finalidades o servicios de la web.
+        Este sitio se rige por la normativa española y europea
+        que resulte aplicable. Esta información deberá revisarse
+        si cambian las características, finalidades o servicios
+        de la web.
       </p>
 
     </div>
