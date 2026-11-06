@@ -7,7 +7,7 @@
 
   <title>Sandra Román Luque | Trabajo Social Organizacional</title>
 
-  <meta name="description" content="Sandra Román Luque. Trabajo Social Organizacional aplicado a Recursos Humanos, gestión del talento, formación, igualdad y transformación organizacional. Modalidad 100 % remota y ámbito internacional.">
+  <meta name="description" content="Sandra Román Luque. Trabajo Social Organizacional aplicado a Recursos Humanos, gestión del talento, formación, igualdad y transformación organizacional. Trabajo 100 % remoto y ámbito internacional.">
   <meta name="author" content="Sandra Román Luque">
   <meta name="theme-color" content="#304c3d">
 
@@ -22,7 +22,7 @@
       --text: #343b35;
       --muted: #69736b;
       --line: #deded5;
-      --white: #fff;
+      --white: #ffffff;
       --width: 1160px;
     }
 
@@ -145,12 +145,12 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 17px;
+      gap: 15px;
     }
 
     nav a {
       color: var(--text);
-      font-size: .79rem;
+      font-size: .77rem;
       transition: color .2s;
     }
 
@@ -165,23 +165,28 @@
       padding: 13px 23px;
       background: var(--forest);
       border: 1px solid var(--forest);
-      color: var(--white);
+      color: var(--white) !important;
       font-size: .87rem;
+      font-weight: 700;
+      line-height: 1.5;
+      text-align: center;
       transition: .2s;
     }
 
     .button:hover {
       background: var(--forest-dark);
+      border-color: var(--forest-dark);
+      color: var(--white) !important;
     }
 
     .button.secondary {
       background: transparent;
-      color: var(--forest);
+      color: var(--forest) !important;
     }
 
     .button.secondary:hover {
       background: var(--forest);
-      color: var(--white);
+      color: var(--white) !important;
     }
 
     /* PORTADA */
@@ -570,6 +575,24 @@
       font-size: .84rem;
     }
 
+    /* NEWSLETTER */
+
+    .newsletter {
+      background: var(--paper);
+    }
+
+    .newsletter-content {
+      max-width: 850px;
+    }
+
+    .newsletter .social-lead {
+      margin-bottom: 20px;
+    }
+
+    .newsletter .button {
+      margin-top: 15px;
+    }
+
     /* PROYECCIÓN INTERNACIONAL */
 
     .opportunities {
@@ -632,6 +655,26 @@
       color: var(--forest);
       margin: 14px 0;
       overflow-wrap: anywhere;
+    }
+
+    .contact-card .button {
+      display: inline-block;
+      min-width: 210px;
+      padding: 14px 24px;
+      color: #ffffff !important;
+      background: #304c3d !important;
+      border: 1px solid #304c3d;
+      font-size: .9rem;
+      font-weight: 700;
+      line-height: 1.5;
+      text-align: center;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .contact-card .button:hover {
+      color: #ffffff !important;
+      background: #22372c !important;
     }
 
     /* PRIVACIDAD */
@@ -781,6 +824,7 @@
       <a href="#metodologia">Metodología</a>
       <a href="#perfil">Perfil</a>
       <a href="#portfolio">Portfolio</a>
+      <a href="#newsletter">Newsletter</a>
       <a href="#proyeccion">Proyección</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -833,7 +877,7 @@
       <div class="portrait">
 
         <img
-          src="imagenes/sandra-rom%C3%A1n-luque.jpg"
+          src="imagenes/sandra-rom%C3%A1n-luque-web.jpg"
           alt="Fotografía profesional de Sandra Román Luque"
           loading="eager">
 
@@ -1369,6 +1413,42 @@
     </div>
   </section>
 
+  <!-- NEWSLETTER -->
+
+  <section class="section newsletter" id="newsletter">
+    <div class="container newsletter-content">
+
+      <p class="eyebrow">Publicaciones y conocimiento</p>
+
+      <h2>El conocimiento es poder.</h2>
+
+      <p class="social-lead">
+        Compartir conocimiento también es una forma de transformar
+        organizaciones.
+      </p>
+
+      <p class="intro">
+        En mi newsletter de LinkedIn publico reflexiones y artículos
+        sobre Trabajo Social Organizacional, Recursos Humanos,
+        igualdad, diversidad, formación, liderazgo y bienestar laboral.
+      </p>
+
+      <p>
+        Un espacio para compartir ideas, cuestionar prácticas
+        y explorar nuevas perspectivas sobre la gestión de personas
+        y el futuro de las organizaciones.
+      </p>
+
+      <a class="button"
+         href="https://www.linkedin.com/newsletters/el-conocimiento-es-poder-7353011386072948736/"
+         target="_blank"
+         rel="noopener noreferrer">
+        Leer y suscribirme a la newsletter
+      </a>
+
+    </div>
+  </section>
+
   <!-- PROYECCIÓN INTERNACIONAL Y REMOTO -->
 
   <section class="section opportunities" id="proyeccion">
@@ -1391,15 +1471,10 @@
       </div>
 
       <p>
-        Desarrollo mi actividad profesional en remoto, con proyección
-        internacional y capacidad para colaborar con empresas, consultoras,
-        entidades y equipos ubicados en distintos países.
-      </p>
-
-      <p>
-        La colaboración a distancia forma parte de mi planteamiento
-        profesional y permite desarrollar proyectos, coordinar procesos
-        y participar en equipos distribuidos geográficamente.
+        Mi modalidad de trabajo es 100 % remota. Desarrollo la comunicación,
+        la coordinación y la participación en proyectos mediante entornos
+        digitales, colaborando con organizaciones y equipos
+        independientemente de su ubicación geográfica.
       </p>
 
       <div class="opportunity-list">
@@ -1440,8 +1515,9 @@
         </p>
 
         <p>
-          La comunicación y las primeras reuniones pueden desarrollarse
-          íntegramente en remoto.
+          Mi modalidad de trabajo es siempre remota. La comunicación,
+          la coordinación y las reuniones se realizan mediante
+          herramientas digitales.
         </p>
 
       </div>
@@ -1460,8 +1536,7 @@
         </a>
 
         <a class="button"
-           href="https://mail.google.com/mail/?view=cm&fs=1&to=sandrarolu90%40gmail.com&su=Contacto%20profesional"
-           target="_blank" rel="noopener noreferrer">
+           href="mailto:sandrarolu90@gmail.com?subject=Contacto%20profesional">
           Escribir un correo
         </a>
 
